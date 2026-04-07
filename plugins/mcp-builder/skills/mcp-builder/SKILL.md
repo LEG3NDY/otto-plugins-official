@@ -152,7 +152,7 @@ See language-specific guides for detailed testing approaches and quality checkli
 
 After implementing your MCP server, create comprehensive evaluations to test its effectiveness.
 
-**Load [✅ Evaluation Guide](./reference/evaluation.md) for complete evaluation guidelines.** The bundled guide focuses on question design and manual verification flow; Otto-specific harnessing can be added later if you need automation.
+**Load [✅ Evaluation Guide](./reference/evaluation.md) for complete evaluation guidelines.**
 
 #### 4.1 Understand Evaluation Purpose
 
@@ -233,4 +233,4 @@ Load these resources as needed during development:
   - Answer verification strategies
   - XML format specifications
   - Example questions and answers
-  - Manual evaluation workflow inside Otto or your own harness
+  - Running an evaluation with the provided scripts

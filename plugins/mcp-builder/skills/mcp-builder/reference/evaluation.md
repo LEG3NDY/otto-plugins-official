@@ -377,19 +377,23 @@ Remember to parallelize solving tasks to avoid running out of context, then accu
 
 # Running Evaluations
 
-After creating your evaluation file, use Otto or your own evaluation harness to test your MCP server.
+After creating your evaluation file, you can use the provided evaluation harness to test your MCP server.
 
 ## Setup
 
-1. **Prepare Your Runtime**
-
-   Make sure the MCP server can be started in the transport mode you want to evaluate and that Otto Code or your local harness can connect to it.
-
-2. **Confirm Otto Access**
+1. **Install Dependencies**
 
    ```bash
-   otto -p "Reply with READY"
+   pip install -r scripts/requirements.txt
    ```
+
+2. **Set Required Credentials**
+
+   ```bash
+   export OTTO_EVAL_MODEL=your_model_id
+   ```
+
+   If your local evaluation harness or chosen model client requires extra credentials, export them before running the script.
 
 ## Evaluation File Format
 
@@ -410,57 +414,90 @@ Evaluation files use XML format with `<qa_pair>` elements:
 
 ## Running Evaluations
 
-Whether you run the evaluation manually in Otto Code or from your own harness, cover the three transport styles your server supports.
+The evaluation script (`scripts/evaluation.py`) supports three transport types:
 
 **Important:**
-- **stdio transport**: Launch the server process directly and keep the evaluation isolated per question.
-- **sse/http transports**: Start the MCP server separately before running the evaluation and connect to the already-running endpoint.
+- **stdio transport**: The evaluation script automatically launches and manages the MCP server process for you. Do not run the server manually.
+- **sse/http transports**: You must start the MCP server separately before running the evaluation. The script connects to the already-running server at the specified URL.
 
 ### 1. Local STDIO Server
 
-For locally-run MCP servers, start the server process directly from your harness or local shell:
+For locally-run MCP servers (script launches the server automatically):
 
 ```bash
-python my_mcp_server.py
+python scripts/evaluation.py \
+  -t stdio \
+  -c python \
+  -a my_mcp_server.py \
+  evaluation.xml
 ```
 
-If you need environment variables:
+With environment variables:
 ```bash
-API_KEY=abc123 DEBUG=true python my_mcp_server.py
+python scripts/evaluation.py \
+  -t stdio \
+  -c python \
+  -a my_mcp_server.py \
+  -e API_KEY=abc123 \
+  -e DEBUG=true \
+  evaluation.xml
 ```
 
 ### 2. Server-Sent Events (SSE)
 
-For SSE-based MCP servers, start the server first and then connect from Otto or your harness:
+For SSE-based MCP servers (you must start the server first):
 
 ```bash
-otto mcp add my-server https://example.com/mcp
+python scripts/evaluation.py \
+  -t sse \
+  -u https://example.com/mcp \
+  -H "Authorization: Bearer token123" \
+  -H "X-Custom-Header: value" \
+  evaluation.xml
 ```
 
 ### 3. HTTP (Streamable HTTP)
 
-For HTTP-based MCP servers, start the server first and connect to the streamable HTTP endpoint:
+For HTTP-based MCP servers (you must start the server first):
 
 ```bash
-otto mcp add my-server https://example.com/mcp
+python scripts/evaluation.py \
+  -t http \
+  -u https://example.com/mcp \
+  -H "Authorization: Bearer token123" \
+  evaluation.xml
 ```
 
 ## Command-Line Options
 
-If you build your own evaluation runner, it should support at least the following inputs:
-
 ```
-transport: stdio | sse | http
-eval_file: path to evaluation XML
-command/url: how to reach the MCP server
-env/headers: connection configuration
-model: optional Otto model override
-output: report destination
+usage: evaluation.py [-h] [-t {stdio,sse,http}] [-m MODEL] [-c COMMAND]
+                     [-a ARGS [ARGS ...]] [-e ENV [ENV ...]] [-u URL]
+                     [-H HEADERS [HEADERS ...]] [-o OUTPUT]
+                     eval_file
+
+positional arguments:
+  eval_file             Path to evaluation XML file
+
+optional arguments:
+  -h, --help            Show help message
+  -t, --transport       Transport type: stdio, sse, or http (default: stdio)
+  -m, --model           Model to use (default: OTTO_EVAL_MODEL)
+  -o, --output          Output file for report (default: print to stdout)
+
+stdio options:
+  -c, --command         Command to run MCP server (e.g., python, node)
+  -a, --args            Arguments for the command (e.g., server.py)
+  -e, --env             Environment variables in KEY=VALUE format
+
+sse/http options:
+  -u, --url             MCP server URL
+  -H, --header          HTTP headers in 'Key: Value' format
 ```
 
 ## Output
 
-Your evaluation report should include:
+The evaluation script generates a detailed report including:
 
 - **Summary Statistics**:
   - Accuracy (correct/total)
@@ -479,8 +516,12 @@ Your evaluation report should include:
 ### Save Report to File
 
 ```bash
-mkdir -p reports
-# save your markdown evaluation summary to reports/evaluation_report.md
+python scripts/evaluation.py \
+  -t stdio \
+  -c python \
+  -a my_server.py \
+  -o evaluation_report.md \
+  evaluation.xml
 ```
 
 ## Complete Example Workflow
@@ -506,17 +547,25 @@ Here's a complete example of creating and running an evaluation:
 </evaluation>
 ```
 
-2. **Prepare the environment**:
+2. **Install dependencies**:
 
 ```bash
-otto auth login
+pip install -r scripts/requirements.txt
+export OTTO_EVAL_MODEL=your_model_id
 ```
+
+Also export any provider-specific credentials required by your local model client before running the harness.
 
 3. **Run evaluation**:
 
 ```bash
-python github_mcp_server.py
-# then run the questions through Otto Code or your own harness
+python scripts/evaluation.py \
+  -t stdio \
+  -c python \
+  -a github_mcp_server.py \
+  -e GITHUB_TOKEN=ghp_xxx \
+  -o github_eval_report.md \
+  my_evaluation.xml
 ```
 
 4. **Review the report** in `github_eval_report.md` to:
@@ -546,7 +595,7 @@ If many evaluations fail:
 ### Timeout Issues
 
 If tasks are timing out:
-- Use a more capable Otto model if needed
+- Use a more capable model if needed
 - Check if tools are returning too much data
 - Verify pagination is working correctly
 - Consider simplifying complex questions

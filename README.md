@@ -58,7 +58,3 @@ otto-plugins-official/
 This repository is intended to become the canonical official marketplace consumed by `otto-code`.
 
 Most plugin content here is Otto-native or adapted from Apache-licensed public skill examples, with Anthropic-restricted/source-available document skills intentionally excluded from this repository. See `THIRD_PARTY_NOTICES.md` for attribution and sourcing notes.
-
-Maintainers working inside the OttoAI monorepo should use the internal maintenance guide in:
-
-- `otto-code/docs/official-marketplace.md`
