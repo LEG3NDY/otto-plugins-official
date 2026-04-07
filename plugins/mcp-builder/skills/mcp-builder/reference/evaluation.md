@@ -387,13 +387,24 @@ After creating your evaluation file, you can use the provided evaluation harness
    pip install -r scripts/requirements.txt
    ```
 
-2. **Set Required Credentials**
+2. **Confirm Otto Access**
+
+   ```bash
+   otto auth login
+   otto -p "Reply with READY"
+   ```
+
+3. **Optional: Set a Model Override**
 
    ```bash
    export OTTO_EVAL_MODEL=your_model_id
    ```
 
-   If your local evaluation harness or chosen model client requires extra credentials, export them before running the script.
+   If `otto` is not on your shell `PATH`, point the harness at it explicitly:
+
+   ```bash
+   export OTTO_EVAL_COMMAND="otto"
+   ```
 
 ## Evaluation File Format
 
@@ -482,7 +493,7 @@ positional arguments:
 optional arguments:
   -h, --help            Show help message
   -t, --transport       Transport type: stdio, sse, or http (default: stdio)
-  -m, --model           Model to use (default: OTTO_EVAL_MODEL)
+  -m, --model           Model to use (default: OTTO_EVAL_MODEL or Otto default)
   -o, --output          Output file for report (default: print to stdout)
 
 stdio options:
@@ -551,10 +562,10 @@ Here's a complete example of creating and running an evaluation:
 
 ```bash
 pip install -r scripts/requirements.txt
+otto -p "Reply with READY"
 export OTTO_EVAL_MODEL=your_model_id
+export OTTO_EVAL_COMMAND="otto"
 ```
-
-Also export any provider-specific credentials required by your local model client before running the harness.
 
 3. **Run evaluation**:
 
