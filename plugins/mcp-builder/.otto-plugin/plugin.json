@@ -1,0 +1,19 @@
+{
+  "name": "mcp-builder",
+  "version": "0.1.0",
+  "description": "MCP server planning and implementation guidance for Otto.",
+  "author": {
+    "name": "OttoAI",
+    "url": "https://github.com/LEG3NDY/otto-plugins-official"
+  },
+  "homepage": "https://github.com/LEG3NDY/otto-plugins-official",
+  "repository": "https://github.com/LEG3NDY/otto-plugins-official",
+  "license": "Apache-2.0",
+  "keywords": [
+    "mcp",
+    "developer-tools",
+    "integration",
+    "servers"
+  ],
+  "skills": "./skills"
+}

@@ -1,0 +1,97 @@
+{
+  "name": "otto-plugins-official",
+  "owner": {
+    "name": "OttoAI",
+    "url": "https://github.com/LEG3NDY/otto-plugins-official"
+  },
+  "metadata": {
+    "version": "0.1.0",
+    "description": "Official Otto marketplace with curated plugins for design, browser QA, MCP development, documentation, and skill authoring."
+  },
+  "plugins": [
+    {
+      "name": "frontend-design",
+      "description": "Design and frontend workflow skills for Otto, including rich web artifact authoring.",
+      "category": "design",
+      "tags": [
+        "design",
+        "frontend",
+        "ui",
+        "ux"
+      ],
+      "source": "./plugins/frontend-design",
+      "version": "0.1.0",
+      "strict": true
+    },
+    {
+      "name": "creative-studio",
+      "description": "Visual design, theming, and animated media skills for Otto.",
+      "category": "design",
+      "tags": [
+        "design",
+        "creative",
+        "graphics",
+        "media"
+      ],
+      "source": "./plugins/creative-studio",
+      "version": "0.1.0",
+      "strict": true
+    },
+    {
+      "name": "playwright",
+      "description": "Browser QA and Playwright workflow skills for Otto.",
+      "category": "browser",
+      "tags": [
+        "browser",
+        "qa",
+        "playwright",
+        "testing"
+      ],
+      "source": "./plugins/playwright",
+      "version": "0.1.0",
+      "strict": true
+    },
+    {
+      "name": "mcp-builder",
+      "description": "MCP server planning and implementation guidance for Otto.",
+      "category": "developer-tools",
+      "tags": [
+        "mcp",
+        "developer-tools",
+        "integration",
+        "servers"
+      ],
+      "source": "./plugins/mcp-builder",
+      "version": "0.1.0",
+      "strict": true
+    },
+    {
+      "name": "internal-comms",
+      "description": "Structured internal communication workflows for Otto.",
+      "category": "productivity",
+      "tags": [
+        "writing",
+        "communications",
+        "docs",
+        "updates"
+      ],
+      "source": "./plugins/internal-comms",
+      "version": "0.1.0",
+      "strict": true
+    },
+    {
+      "name": "skill-creator",
+      "description": "Skill authoring and refinement workflows for Otto.",
+      "category": "developer-tools",
+      "tags": [
+        "skills",
+        "authoring",
+        "prompting",
+        "workflow"
+      ],
+      "source": "./plugins/skill-creator",
+      "version": "0.1.0",
+      "strict": true
+    }
+  ]
+}

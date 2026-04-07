@@ -1,0 +1,19 @@
+{
+  "name": "playwright",
+  "version": "0.1.0",
+  "description": "Browser QA and end-to-end testing skills for Otto.",
+  "author": {
+    "name": "OttoAI",
+    "url": "https://github.com/LEG3NDY/otto-plugins-official"
+  },
+  "homepage": "https://github.com/LEG3NDY/otto-plugins-official",
+  "repository": "https://github.com/LEG3NDY/otto-plugins-official",
+  "license": "Apache-2.0",
+  "keywords": [
+    "playwright",
+    "browser",
+    "testing",
+    "qa"
+  ],
+  "skills": "./skills"
+}
