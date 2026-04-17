@@ -8,7 +8,7 @@ This repository contains curated plugins that extend Otto with reusable skills, 
 
 Each plugin in this marketplace is a self-contained package that Otto can install and expose to the user.
 
-Current official plugins:
+Official plugins:
 
 - `frontend-design`
   Design and frontend workflow skills for stronger UI direction, hierarchy, responsiveness, polish, and richer web artifacts.
@@ -37,7 +37,7 @@ Current official plugins:
 
 ## How Users Benefit
 
-The goal of this marketplace is to give Otto a clean official surface for high-value workflows that should be installable, reusable, and versioned independently from the host.
+The goal of this marketplace is to give Otto a clean official surface for reusable workflows that should be installable and versioned independently from the host.
 
 That includes capabilities such as:
 
@@ -77,10 +77,10 @@ otto-plugins-official/
     └── skill-creator/
 ```
 
-## Status
+## Sourcing
 
-This repository is intended to become the canonical official marketplace consumed by `otto-code`.
+This repository publishes the official Otto plugin marketplace.
 
 Most plugin content here is Otto-native or adapted from Apache-licensed public skill examples, with plugin-level `NOTICE` files and modified-file attribution notices where content was rewritten. Anthropic-restricted/source-available document skills and content without clear redistribution terms are intentionally excluded from this repository. See `THIRD_PARTY_NOTICES.md` for attribution and sourcing notes.
 
-The current audit and porting backlog across the wider `Documents` skill inventories lives in [docs/SKILL_PORTING_MATRIX.md](./docs/SKILL_PORTING_MATRIX.md).
+For a source-by-source inclusion summary, see [docs/SKILL_PORTING_MATRIX.md](./docs/SKILL_PORTING_MATRIX.md).

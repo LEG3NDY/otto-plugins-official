@@ -7,12 +7,12 @@ This document summarizes source skill inventories evaluated for Otto/LEG3NDY mar
 - `ported`: already available in `otto-plugins-official`
 - `port-now`: low-friction candidate that can be adapted directly to Otto/LEG3NDY
 - `port-with-rewrite`: useful idea, but the source is tightly coupled to another product, runtime, or schema
-- `reference-only`: useful as inspiration, but too product-specific or environment-specific to ship here
+- `reference-only`: useful as inspiration, but not suitable for public marketplace distribution in current form
 - `blocked-license`: do not port into this repository without a clean Otto-native reimplementation
 
-## Current additions
+## Marketplace coverage
 
-The marketplace currently includes these additions beyond the original starting set:
+The following skills are already represented in this repository:
 
 - `algorithmic-art` added under `creative-studio`
 - `doc-coauthoring` added under `doc-workflows`
@@ -27,19 +27,19 @@ The marketplace currently includes these additions beyond the original starting 
 
 | Skill | Status | Target plugin | Notes |
 | --- | --- | --- | --- |
-| `canvas-design` | `ported` | `creative-studio` | Available in the current marketplace. |
-| `slack-gif-creator` | `ported` | `creative-studio` | Available in the current marketplace. |
-| `theme-factory` | `ported` | `creative-studio` | Available in the current marketplace. |
+| `canvas-design` | `ported` | `creative-studio` | Included in this repository. |
+| `slack-gif-creator` | `ported` | `creative-studio` | Included in this repository. |
+| `theme-factory` | `ported` | `creative-studio` | Included in this repository. |
 | `algorithmic-art` | `ported` | `creative-studio` | Apache-licensed source; required Otto branding cleanup. |
-| `frontend-design` | `ported` | `frontend-design` | Available in the current marketplace. |
-| `web-artifacts-builder` | `ported` | `frontend-design` | Available in the current marketplace. |
-| `internal-comms` | `ported` | `internal-comms` | Available in the current marketplace. |
-| `mcp-builder` | `ported` | `mcp-builder` | Available in the current marketplace. |
-| `webapp-testing` | `ported` | `playwright` | Available in the current marketplace. |
-| `skill-creator` | `ported` | `skill-creator` | Available in the current marketplace. |
+| `frontend-design` | `ported` | `frontend-design` | Included in this repository. |
+| `web-artifacts-builder` | `ported` | `frontend-design` | Included in this repository. |
+| `internal-comms` | `ported` | `internal-comms` | Included in this repository. |
+| `mcp-builder` | `ported` | `mcp-builder` | Included in this repository. |
+| `webapp-testing` | `ported` | `playwright` | Included in this repository. |
+| `skill-creator` | `ported` | `skill-creator` | Included in this repository. |
 | `doc-coauthoring` | `ported` | `doc-workflows` | Generic workflow; needed Otto terminology and web/runtime cleanup. |
 | `brand-guidelines` | `port-with-rewrite` | `leg3ndy-brand` | Source is explicitly Anthropic-branded. Rebuild around Otto/LEG3NDY brand assets instead of search/replace. |
-| `claude-api` | `port-with-rewrite` | `leg3ndy-api` | High-value, but deeply coupled to Anthropic/Claude SDKs and model naming. Needs a real Otto/LEG3NDY API surface first. |
+| `claude-api` | `port-with-rewrite` | `leg3ndy-api` | Deeply coupled to Anthropic/Claude SDKs and model naming. Requires an Otto/LEG3NDY-native API surface before inclusion. |
 | `docx` | `blocked-license` | n/a | Source-available Anthropic document skill. Reimplement Otto-native version instead of porting. |
 | `pdf` | `blocked-license` | n/a | Same constraint as `docx`. |
 | `pptx` | `blocked-license` | n/a | Same constraint as `docx`. |
@@ -51,9 +51,9 @@ The marketplace currently includes these additions beyond the original starting 
 | --- | --- | --- | --- |
 | `plugin-creator` | `ported` | `plugin-builder` | Rewritten to the `.otto-plugin` schema and marketplace format used here. |
 | `skill-installer` | `ported` | `marketplace-tools` | Rewritten around Otto plugin marketplaces, `known_marketplaces.json`, and `installed_plugins.json`. |
-| `imagegen` | `port-with-rewrite` | `creative-studio` or `image-tools` | Useful, but depends on Codex built-in tool semantics and OpenAI fallback docs. |
+| `imagegen` | `port-with-rewrite` | `creative-studio` or `image-tools` | Depends on Codex built-in tool semantics and OpenAI fallback docs. |
 | `openai-docs` | `reference-only` | n/a | Valuable for provider-specific integrations, but not Otto/LEG3NDY-native marketplace content. |
-| `skill-creator` | `ported` | `skill-creator` | Available in the current marketplace. |
+| `skill-creator` | `ported` | `skill-creator` | Included in this repository. |
 
 ## Source: Codex skills
 
@@ -89,7 +89,7 @@ The marketplace currently includes these additions beyond the original starting 
 | `pr-creator` | `ported` | `git-workflows` | Consolidated into `create-pull-request` with stronger template and preflight guidance. |
 | `docs-changelog` | `port-with-rewrite` | `doc-workflows` | Requires deeper review of Gemini-specific assumptions before inclusion. |
 | `docs-writer` | `port-with-rewrite` | `doc-workflows` | Same as `docs-changelog`. |
-| `github-issue-creator` | `port-with-rewrite` | `git-workflows` | Likely tied to Gemini repository process and requires Otto-native rewrite before inclusion. |
+| `github-issue-creator` | `port-with-rewrite` | `git-workflows` | Tied to Gemini repository process and requires Otto-native rewrite before inclusion. |
 | `code-reviewer` | `reference-only` | n/a | Not currently suitable for marketplace inclusion without deeper review. |
 | `string-reviewer` | `reference-only` | n/a | Repo/process-specific without adaptation. |
 
