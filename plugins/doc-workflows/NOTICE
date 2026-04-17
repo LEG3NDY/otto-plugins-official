@@ -1,0 +1,10 @@
+Adapted content notice for `doc-workflows`
+
+This plugin includes Otto-native adaptations of public Apache-licensed content
+originally published in the `anthropics/skills` repository.
+
+Adapted skills in this plugin:
+- `doc-coauthoring`
+
+OttoAI / LEG3NDY modified this material for Otto terminology, Otto Web / Otto
+Code workflow references, and repository conventions.

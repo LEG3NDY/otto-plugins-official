@@ -1,0 +1,13 @@
+Adapted content notice for `creative-studio`
+
+This plugin includes Otto-native adaptations of public Apache-licensed content
+originally published in the `anthropics/skills` repository.
+
+Adapted skills in this plugin:
+- `canvas-design`
+- `slack-gif-creator`
+- `theme-factory`
+- `algorithmic-art`
+
+OttoAI / LEG3NDY modified this material for Otto-native branding, `.otto`
+repository conventions, and host workflow guidance.

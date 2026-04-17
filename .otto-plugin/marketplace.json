@@ -6,7 +6,7 @@
   },
   "metadata": {
     "version": "0.1.0",
-    "description": "Official Otto marketplace with curated plugins for design, browser QA, MCP development, documentation, and skill authoring."
+    "description": "Official Otto marketplace with curated plugins for design, documentation, browser QA, frontend QA, MCP development, developer audit, marketplace operations, git workflows, plugin authoring, and skill authoring."
   },
   "plugins": [
     {
@@ -24,16 +24,59 @@
       "strict": true
     },
     {
+      "name": "frontend-qa",
+      "description": "Visual regression, screenshot baseline, and frontend QA artifact workflows for Otto.",
+      "category": "browser",
+      "tags": [
+        "frontend",
+        "qa",
+        "screenshots",
+        "visual-regression"
+      ],
+      "source": "./plugins/frontend-qa",
+      "version": "0.1.0",
+      "strict": true
+    },
+    {
       "name": "creative-studio",
-      "description": "Visual design, theming, and animated media skills for Otto.",
+      "description": "Visual design, generative art, theming, and animated media skills for Otto.",
       "category": "design",
       "tags": [
         "design",
         "creative",
         "graphics",
-        "media"
+        "media",
+        "generative"
       ],
       "source": "./plugins/creative-studio",
+      "version": "0.1.0",
+      "strict": true
+    },
+    {
+      "name": "doc-workflows",
+      "description": "Structured documentation co-authoring workflows for Otto.",
+      "category": "productivity",
+      "tags": [
+        "docs",
+        "writing",
+        "specs",
+        "collaboration"
+      ],
+      "source": "./plugins/doc-workflows",
+      "version": "0.1.0",
+      "strict": true
+    },
+    {
+      "name": "developer-audit",
+      "description": "Git authorship and contribution audit workflows for Otto.",
+      "category": "developer-tools",
+      "tags": [
+        "git",
+        "audit",
+        "authorship",
+        "analysis"
+      ],
+      "source": "./plugins/developer-audit",
       "version": "0.1.0",
       "strict": true
     },
@@ -48,6 +91,21 @@
         "testing"
       ],
       "source": "./plugins/playwright",
+      "version": "0.1.0",
+      "strict": true
+    },
+    {
+      "name": "git-workflows",
+      "description": "Pull-request creation, review, babysitting, and feedback-handling workflows for Otto.",
+      "category": "developer-tools",
+      "tags": [
+        "git",
+        "github",
+        "pull-requests",
+        "review",
+        "monitoring"
+      ],
+      "source": "./plugins/git-workflows",
       "version": "0.1.0",
       "strict": true
     },
@@ -76,6 +134,34 @@
         "updates"
       ],
       "source": "./plugins/internal-comms",
+      "version": "0.1.0",
+      "strict": true
+    },
+    {
+      "name": "marketplace-tools",
+      "description": "Plugin installation, marketplace configuration, and local plugin-state workflows for Otto.",
+      "category": "developer-tools",
+      "tags": [
+        "plugins",
+        "marketplace",
+        "installation",
+        "operations"
+      ],
+      "source": "./plugins/marketplace-tools",
+      "version": "0.1.0",
+      "strict": true
+    },
+    {
+      "name": "plugin-builder",
+      "description": "Plugin scaffolding and marketplace maintenance workflows for Otto.",
+      "category": "developer-tools",
+      "tags": [
+        "plugins",
+        "marketplace",
+        "authoring",
+        "scaffolding"
+      ],
+      "source": "./plugins/plugin-builder",
       "version": "0.1.0",
       "strict": true
     },

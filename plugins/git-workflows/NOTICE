@@ -1,0 +1,17 @@
+Adapted content notice for `git-workflows`
+
+This plugin includes Otto-native adaptations of public Apache-licensed content
+originally published in the `cline` repository and `gemini-cli`.
+
+Adapted skills in this plugin:
+- `create-pull-request` (consolidated with `pr-creator` guidance)
+- `pr-address-comments`
+- `async-pr-review`
+
+OttoAI / LEG3NDY modified this material for Otto conventions, non-interactive
+git guidance, `gh`-based pull-request creation flows, and Otto-native async
+review patterns.
+
+This plugin also includes an Otto-native reimplementation inspired by the
+public Codex `babysit-pr` workflow:
+- `babysit-pr`

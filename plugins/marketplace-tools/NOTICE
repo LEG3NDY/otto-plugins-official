@@ -1,0 +1,11 @@
+Adapted content notice for `marketplace-tools`
+
+This plugin includes Otto-native adaptations of public Apache-licensed content
+originally published in the `openai/codex` skill-installer sample.
+
+Adapted skills in this plugin:
+- `plugin-installer`
+
+OttoAI / LEG3NDY rewrote the workflow around Otto plugin marketplaces,
+`known_marketplaces.json`, `installed_plugins.json`, and Otto's built-in plugin
+commands.

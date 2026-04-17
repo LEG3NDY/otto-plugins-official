@@ -1,7 +1,7 @@
 {
-  "name": "creative-studio",
+  "name": "marketplace-tools",
   "version": "0.1.0",
-  "description": "Visual composition, generative art, theming, and animated media skills for Otto.",
+  "description": "Plugin installation, marketplace configuration, and local plugin-state workflows for Otto.",
   "author": {
     "name": "OttoAI",
     "url": "https://github.com/LEG3NDY/otto-plugins-official"
@@ -10,12 +10,10 @@
   "repository": "https://github.com/LEG3NDY/otto-plugins-official",
   "license": "Apache-2.0",
   "keywords": [
-    "design",
-    "creative",
-    "graphics",
-    "themes",
-    "gif",
-    "generative"
+    "plugins",
+    "marketplace",
+    "installation",
+    "operations"
   ],
   "skills": "./skills"
 }

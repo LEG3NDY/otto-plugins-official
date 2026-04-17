@@ -1,0 +1,10 @@
+Adapted content notice for `plugin-builder`
+
+This plugin includes Otto-native adaptations of public Apache-licensed content
+originally published in the `openai/codex` sample skills.
+
+Adapted skills in this plugin:
+- `plugin-creator`
+
+OttoAI / LEG3NDY rewrote the manifests, schema references, and helper scripts
+for the `.otto-plugin` repository format used by this marketplace.
