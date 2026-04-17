@@ -87,11 +87,11 @@ The marketplace currently includes these additions beyond the original starting 
 | `async-pr-review` | `ported` | `git-workflows` | Rewritten around Otto-native background checks, log files, and later synthesis instead of Gemini headless inference. |
 | `pr-address-comments` | `ported` | `git-workflows` | Rewritten as a generic Otto workflow for triaging GitHub PR comments before editing code. |
 | `pr-creator` | `ported` | `git-workflows` | Consolidated into `create-pull-request` with stronger template and preflight guidance. |
-| `docs-changelog` | `port-with-rewrite` | `doc-workflows` | Potentially adaptable, but requires deeper review of Gemini-specific assumptions. |
+| `docs-changelog` | `port-with-rewrite` | `doc-workflows` | Requires deeper review of Gemini-specific assumptions before inclusion. |
 | `docs-writer` | `port-with-rewrite` | `doc-workflows` | Same as `docs-changelog`. |
-| `github-issue-creator` | `port-with-rewrite` | `git-workflows` | Good idea, but likely tied to Gemini repo process. |
-| `code-reviewer` | `reference-only` | n/a | Potentially useful, but not yet suitable for marketplace inclusion without deeper review. |
-| `string-reviewer` | `reference-only` | n/a | Likely too repo/process-specific without adaptation. |
+| `github-issue-creator` | `port-with-rewrite` | `git-workflows` | Likely tied to Gemini repository process and requires Otto-native rewrite before inclusion. |
+| `code-reviewer` | `reference-only` | n/a | Not currently suitable for marketplace inclusion without deeper review. |
+| `string-reviewer` | `reference-only` | n/a | Repo/process-specific without adaptation. |
 
 ## Source: Cline skills
 
@@ -99,15 +99,7 @@ The marketplace currently includes these additions beyond the original starting 
 | --- | --- | --- | --- |
 | `create-pull-request` | `ported` | `git-workflows` | Rewritten for Otto conventions, then consolidated with Gemini `pr-creator` guidance. |
 
-## Suggested next waves
-
-1. Add heartbeat or automation-assisted monitoring to `git-workflows` on top of `babysit-pr`
-2. Extend `frontend-qa` with report summarization or selective baseline acceptance workflows
-3. `brand-guidelines` -> reauthor as `leg3ndy-brand`
-4. `claude-api` -> only after a real `leg3ndy-api` SDK/docs surface exists
-5. `imagegen` -> adapt only after deciding how much Otto should depend on built-in image tooling versus plugin content
-
-## Explicit non-goals for this repository
+## Public inclusion constraints
 
 - Do not port Anthropic-restricted document skills directly.
 - Do not ship Anthropic branding or Claude API product guidance under Otto naming.
