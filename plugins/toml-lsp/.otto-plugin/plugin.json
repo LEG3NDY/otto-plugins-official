@@ -1,0 +1,23 @@
+{
+  "name": "toml-lsp",
+  "version": "0.1.0",
+  "description": "TOML code intelligence through Taplo.",
+  "author": {
+    "name": "OttoAI",
+    "url": "https://github.com/LEG3NDY/otto-plugins-official"
+  },
+  "homepage": "https://github.com/LEG3NDY/otto-plugins-official",
+  "repository": "https://github.com/LEG3NDY/otto-plugins-official",
+  "license": "Apache-2.0",
+  "keywords": ["lsp", "toml", "code-intelligence"],
+  "lspServers": {
+    "toml": {
+      "command": "taplo",
+      "args": ["lsp", "stdio"],
+      "extensionToLanguage": {
+        ".toml": "toml"
+      },
+      "transport": "stdio"
+    }
+  }
+}

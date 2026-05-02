@@ -1,0 +1,28 @@
+{
+  "name": "typescript-lsp",
+  "version": "0.1.0",
+  "description": "TypeScript and JavaScript code intelligence through typescript-language-server.",
+  "author": {
+    "name": "OttoAI",
+    "url": "https://github.com/LEG3NDY/otto-plugins-official"
+  },
+  "homepage": "https://github.com/LEG3NDY/otto-plugins-official",
+  "repository": "https://github.com/LEG3NDY/otto-plugins-official",
+  "license": "Apache-2.0",
+  "keywords": ["lsp", "typescript", "javascript", "code-intelligence"],
+  "lspServers": {
+    "typescript": {
+      "command": "typescript-language-server",
+      "args": ["--stdio"],
+      "extensionToLanguage": {
+        ".ts": "typescript",
+        ".tsx": "typescriptreact",
+        ".js": "javascript",
+        ".jsx": "javascriptreact",
+        ".mjs": "javascript",
+        ".cjs": "javascript"
+      },
+      "transport": "stdio"
+    }
+  }
+}

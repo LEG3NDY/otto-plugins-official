@@ -34,6 +34,8 @@ Official plugins:
   Plugin scaffolding and marketplace maintenance workflows for Otto/LEG3NDY plugin authors.
 - `skill-creator`
   Skill authoring workflows for creating, refining, and standardizing Otto skills.
+- LSP plugins
+  Code intelligence adapters for TypeScript/JavaScript, HTML, CSS, JSON, Markdown, TOML, YAML, Python, Rust, Go, and C/C++.
 
 ## How Users Benefit
 
@@ -53,6 +55,7 @@ That includes capabilities such as:
 - plugin authoring
 - git workflows
 - reusable development workflows
+- LSP code intelligence
 - future MCP integrations
 - future agent packs
 
@@ -74,7 +77,18 @@ otto-plugins-official/
     ├── mcp-builder/
     ├── playwright/
     ├── plugin-builder/
-    └── skill-creator/
+    ├── skill-creator/
+    ├── typescript-lsp/
+    ├── html-lsp/
+    ├── css-lsp/
+    ├── json-lsp/
+    ├── markdown-lsp/
+    ├── toml-lsp/
+    ├── yaml-lsp/
+    ├── pyright-lsp/
+    ├── rust-analyzer-lsp/
+    ├── gopls-lsp/
+    └── clangd-lsp/
 ```
 
 ## Sourcing

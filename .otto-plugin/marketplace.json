@@ -178,6 +178,306 @@
       "source": "./plugins/skill-creator",
       "version": "0.1.0",
       "strict": true
+    },
+    {
+      "name": "typescript-lsp",
+      "description": "TypeScript and JavaScript code intelligence through typescript-language-server.",
+      "category": "developer-tools",
+      "tags": [
+        "lsp",
+        "typescript",
+        "javascript",
+        "code-intelligence"
+      ],
+      "source": "./plugins/typescript-lsp",
+      "version": "0.1.0",
+      "strict": true,
+      "lspServers": {
+        "typescript": {
+          "command": "typescript-language-server",
+          "args": [
+            "--stdio"
+          ],
+          "extensionToLanguage": {
+            ".ts": "typescript",
+            ".tsx": "typescriptreact",
+            ".js": "javascript",
+            ".jsx": "javascriptreact",
+            ".mjs": "javascript",
+            ".cjs": "javascript"
+          },
+          "transport": "stdio"
+        }
+      }
+    },
+    {
+      "name": "html-lsp",
+      "description": "HTML code intelligence through vscode-html-language-server.",
+      "category": "developer-tools",
+      "tags": [
+        "lsp",
+        "html",
+        "code-intelligence"
+      ],
+      "source": "./plugins/html-lsp",
+      "version": "0.1.0",
+      "strict": true,
+      "lspServers": {
+        "html": {
+          "command": "vscode-html-language-server",
+          "args": [
+            "--stdio"
+          ],
+          "extensionToLanguage": {
+            ".html": "html",
+            ".htm": "html"
+          },
+          "transport": "stdio"
+        }
+      }
+    },
+    {
+      "name": "css-lsp",
+      "description": "CSS, SCSS, and Less code intelligence through vscode-css-language-server.",
+      "category": "developer-tools",
+      "tags": [
+        "lsp",
+        "css",
+        "scss",
+        "less",
+        "code-intelligence"
+      ],
+      "source": "./plugins/css-lsp",
+      "version": "0.1.0",
+      "strict": true,
+      "lspServers": {
+        "css": {
+          "command": "vscode-css-language-server",
+          "args": [
+            "--stdio"
+          ],
+          "extensionToLanguage": {
+            ".css": "css",
+            ".scss": "scss",
+            ".less": "less"
+          },
+          "transport": "stdio"
+        }
+      }
+    },
+    {
+      "name": "json-lsp",
+      "description": "JSON and JSONC code intelligence through vscode-json-language-server.",
+      "category": "developer-tools",
+      "tags": [
+        "lsp",
+        "json",
+        "jsonc",
+        "code-intelligence"
+      ],
+      "source": "./plugins/json-lsp",
+      "version": "0.1.0",
+      "strict": true,
+      "lspServers": {
+        "json": {
+          "command": "vscode-json-language-server",
+          "args": [
+            "--stdio"
+          ],
+          "extensionToLanguage": {
+            ".json": "json",
+            ".jsonc": "jsonc"
+          },
+          "transport": "stdio"
+        }
+      }
+    },
+    {
+      "name": "markdown-lsp",
+      "description": "Markdown code intelligence through Marksman.",
+      "category": "developer-tools",
+      "tags": [
+        "lsp",
+        "markdown",
+        "docs",
+        "code-intelligence"
+      ],
+      "source": "./plugins/markdown-lsp",
+      "version": "0.1.0",
+      "strict": true,
+      "lspServers": {
+        "markdown": {
+          "command": "marksman",
+          "args": [
+            "server"
+          ],
+          "extensionToLanguage": {
+            ".md": "markdown",
+            ".markdown": "markdown"
+          },
+          "transport": "stdio"
+        }
+      }
+    },
+    {
+      "name": "toml-lsp",
+      "description": "TOML code intelligence through Taplo.",
+      "category": "developer-tools",
+      "tags": [
+        "lsp",
+        "toml",
+        "code-intelligence"
+      ],
+      "source": "./plugins/toml-lsp",
+      "version": "0.1.0",
+      "strict": true,
+      "lspServers": {
+        "toml": {
+          "command": "taplo",
+          "args": [
+            "lsp",
+            "stdio"
+          ],
+          "extensionToLanguage": {
+            ".toml": "toml"
+          },
+          "transport": "stdio"
+        }
+      }
+    },
+    {
+      "name": "yaml-lsp",
+      "description": "YAML code intelligence through yaml-language-server.",
+      "category": "developer-tools",
+      "tags": [
+        "lsp",
+        "yaml",
+        "code-intelligence"
+      ],
+      "source": "./plugins/yaml-lsp",
+      "version": "0.1.0",
+      "strict": true,
+      "lspServers": {
+        "yaml": {
+          "command": "yaml-language-server",
+          "args": [
+            "--stdio"
+          ],
+          "extensionToLanguage": {
+            ".yaml": "yaml",
+            ".yml": "yaml"
+          },
+          "transport": "stdio"
+        }
+      }
+    },
+    {
+      "name": "pyright-lsp",
+      "description": "Python code intelligence through Pyright.",
+      "category": "developer-tools",
+      "tags": [
+        "lsp",
+        "python",
+        "pyright",
+        "code-intelligence"
+      ],
+      "source": "./plugins/pyright-lsp",
+      "version": "0.1.0",
+      "strict": true,
+      "lspServers": {
+        "python": {
+          "command": "pyright-langserver",
+          "args": [
+            "--stdio"
+          ],
+          "extensionToLanguage": {
+            ".py": "python",
+            ".pyi": "python"
+          },
+          "transport": "stdio"
+        }
+      }
+    },
+    {
+      "name": "rust-analyzer-lsp",
+      "description": "Rust code intelligence through rust-analyzer.",
+      "category": "developer-tools",
+      "tags": [
+        "lsp",
+        "rust",
+        "rust-analyzer",
+        "code-intelligence"
+      ],
+      "source": "./plugins/rust-analyzer-lsp",
+      "version": "0.1.0",
+      "strict": true,
+      "lspServers": {
+        "rust": {
+          "command": "rust-analyzer",
+          "extensionToLanguage": {
+            ".rs": "rust"
+          },
+          "transport": "stdio"
+        }
+      }
+    },
+    {
+      "name": "gopls-lsp",
+      "description": "Go code intelligence through gopls.",
+      "category": "developer-tools",
+      "tags": [
+        "lsp",
+        "go",
+        "gopls",
+        "code-intelligence"
+      ],
+      "source": "./plugins/gopls-lsp",
+      "version": "0.1.0",
+      "strict": true,
+      "lspServers": {
+        "go": {
+          "command": "gopls",
+          "extensionToLanguage": {
+            ".go": "go",
+            ".mod": "go.mod",
+            ".sum": "go.sum"
+          },
+          "transport": "stdio"
+        }
+      }
+    },
+    {
+      "name": "clangd-lsp",
+      "description": "C, C++, Objective-C, and Objective-C++ code intelligence through clangd.",
+      "category": "developer-tools",
+      "tags": [
+        "lsp",
+        "c",
+        "cpp",
+        "clangd",
+        "code-intelligence"
+      ],
+      "source": "./plugins/clangd-lsp",
+      "version": "0.1.0",
+      "strict": true,
+      "lspServers": {
+        "clangd": {
+          "command": "clangd",
+          "extensionToLanguage": {
+            ".c": "c",
+            ".h": "c",
+            ".cc": "cpp",
+            ".cpp": "cpp",
+            ".cxx": "cpp",
+            ".hpp": "cpp",
+            ".hh": "cpp",
+            ".hxx": "cpp",
+            ".m": "objective-c",
+            ".mm": "objective-cpp"
+          },
+          "transport": "stdio"
+        }
+      }
     }
   ]
 }
