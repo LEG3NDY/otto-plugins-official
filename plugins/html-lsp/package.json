@@ -1,0 +1,9 @@
+{
+  "name": "@otto-plugins-official/html-lsp-runtime",
+  "version": "0.1.1",
+  "private": true,
+  "description": "Runtime dependencies for the Otto HTML LSP plugin.",
+  "dependencies": {
+    "vscode-langservers-extracted": "4.10.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "@otto-plugins-official/json-lsp-runtime",
+  "version": "0.1.1",
+  "private": true,
+  "description": "Runtime dependencies for the Otto JSON LSP plugin.",
+  "dependencies": {
+    "vscode-langservers-extracted": "4.10.0"
+  }
+}

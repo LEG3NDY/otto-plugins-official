@@ -1,6 +1,6 @@
 {
   "name": "json-lsp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "JSON and JSONC code intelligence through vscode-json-language-server.",
   "author": {
     "name": "OttoAI",
@@ -12,7 +12,7 @@
   "keywords": ["lsp", "json", "jsonc", "code-intelligence"],
   "lspServers": {
     "json": {
-      "command": "vscode-json-language-server",
+      "command": "${OTTO_PLUGIN_ROOT}/node_modules/.bin/vscode-json-language-server",
       "args": ["--stdio"],
       "extensionToLanguage": {
         ".json": "json",

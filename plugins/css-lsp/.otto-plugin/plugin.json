@@ -1,6 +1,6 @@
 {
   "name": "css-lsp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CSS, SCSS, and Less code intelligence through vscode-css-language-server.",
   "author": {
     "name": "OttoAI",
@@ -12,7 +12,7 @@
   "keywords": ["lsp", "css", "scss", "less", "code-intelligence"],
   "lspServers": {
     "css": {
-      "command": "vscode-css-language-server",
+      "command": "${OTTO_PLUGIN_ROOT}/node_modules/.bin/vscode-css-language-server",
       "args": ["--stdio"],
       "extensionToLanguage": {
         ".css": "css",

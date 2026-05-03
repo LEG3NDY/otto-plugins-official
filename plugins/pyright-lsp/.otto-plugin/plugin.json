@@ -1,6 +1,6 @@
 {
   "name": "pyright-lsp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Python code intelligence through Pyright.",
   "author": {
     "name": "OttoAI",
@@ -12,7 +12,7 @@
   "keywords": ["lsp", "python", "pyright", "code-intelligence"],
   "lspServers": {
     "python": {
-      "command": "pyright-langserver",
+      "command": "${OTTO_PLUGIN_ROOT}/node_modules/.bin/pyright-langserver",
       "args": ["--stdio"],
       "extensionToLanguage": {
         ".py": "python",

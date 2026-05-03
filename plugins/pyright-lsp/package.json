@@ -1,0 +1,9 @@
+{
+  "name": "@otto-plugins-official/pyright-lsp-runtime",
+  "version": "0.1.1",
+  "private": true,
+  "description": "Runtime dependencies for the Otto Pyright LSP plugin.",
+  "dependencies": {
+    "pyright": "1.1.409"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "yaml-lsp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "YAML code intelligence through yaml-language-server.",
   "author": {
     "name": "OttoAI",
@@ -12,7 +12,7 @@
   "keywords": ["lsp", "yaml", "code-intelligence"],
   "lspServers": {
     "yaml": {
-      "command": "yaml-language-server",
+      "command": "${OTTO_PLUGIN_ROOT}/node_modules/.bin/yaml-language-server",
       "args": ["--stdio"],
       "extensionToLanguage": {
         ".yaml": "yaml",

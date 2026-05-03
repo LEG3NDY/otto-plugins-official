@@ -1,0 +1,10 @@
+{
+  "name": "@otto-plugins-official/typescript-lsp-runtime",
+  "version": "0.1.1",
+  "private": true,
+  "description": "Runtime dependencies for the Otto TypeScript LSP plugin.",
+  "dependencies": {
+    "typescript": "6.0.3",
+    "typescript-language-server": "5.1.3"
+  }
+}

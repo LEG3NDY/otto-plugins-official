@@ -1,0 +1,9 @@
+{
+  "name": "@otto-plugins-official/yaml-lsp-runtime",
+  "version": "0.1.1",
+  "private": true,
+  "description": "Runtime dependencies for the Otto YAML LSP plugin.",
+  "dependencies": {
+    "yaml-language-server": "1.22.0"
+  }
+}

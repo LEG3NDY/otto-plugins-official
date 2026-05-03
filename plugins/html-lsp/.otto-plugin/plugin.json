@@ -1,6 +1,6 @@
 {
   "name": "html-lsp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "HTML code intelligence through vscode-html-language-server.",
   "author": {
     "name": "OttoAI",
@@ -12,7 +12,7 @@
   "keywords": ["lsp", "html", "code-intelligence"],
   "lspServers": {
     "html": {
-      "command": "vscode-html-language-server",
+      "command": "${OTTO_PLUGIN_ROOT}/node_modules/.bin/vscode-html-language-server",
       "args": ["--stdio"],
       "extensionToLanguage": {
         ".html": "html",

@@ -1,6 +1,6 @@
 {
   "name": "typescript-lsp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TypeScript and JavaScript code intelligence through typescript-language-server.",
   "author": {
     "name": "OttoAI",
@@ -12,7 +12,7 @@
   "keywords": ["lsp", "typescript", "javascript", "code-intelligence"],
   "lspServers": {
     "typescript": {
-      "command": "typescript-language-server",
+      "command": "${OTTO_PLUGIN_ROOT}/node_modules/.bin/typescript-language-server",
       "args": ["--stdio"],
       "extensionToLanguage": {
         ".ts": "typescript",

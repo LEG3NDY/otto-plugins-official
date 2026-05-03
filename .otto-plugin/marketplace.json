@@ -190,7 +190,7 @@
         "code-intelligence"
       ],
       "source": "./plugins/typescript-lsp",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "strict": true,
       "lspServers": {
         "typescript": {
@@ -220,7 +220,7 @@
         "code-intelligence"
       ],
       "source": "./plugins/html-lsp",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "strict": true,
       "lspServers": {
         "html": {
@@ -248,7 +248,7 @@
         "code-intelligence"
       ],
       "source": "./plugins/css-lsp",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "strict": true,
       "lspServers": {
         "css": {
@@ -276,7 +276,7 @@
         "code-intelligence"
       ],
       "source": "./plugins/json-lsp",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "strict": true,
       "lspServers": {
         "json": {
@@ -355,7 +355,7 @@
         "code-intelligence"
       ],
       "source": "./plugins/yaml-lsp",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "strict": true,
       "lspServers": {
         "yaml": {
@@ -382,7 +382,7 @@
         "code-intelligence"
       ],
       "source": "./plugins/pyright-lsp",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "strict": true,
       "lspServers": {
         "python": {
