@@ -1,0 +1,24 @@
+{
+  "name": "github",
+  "version": "0.1.0",
+  "description": "Otto wrapper for the official GitHub remote MCP endpoint for repository workflows.",
+  "author": {
+    "name": "OttoAI",
+    "url": "https://github.com/LEG3NDY/otto-plugins-official"
+  },
+  "homepage": "https://docs.github.com/en/copilot/how-tos/context/model-context-protocol/using-the-github-mcp-server",
+  "repository": "https://github.com/LEG3NDY/otto-plugins-official",
+  "license": "Apache-2.0",
+  "keywords": [
+    "github",
+    "mcp",
+    "pull-requests",
+    "issues"
+  ],
+  "mcpServers": {
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/"
+    }
+  }
+}

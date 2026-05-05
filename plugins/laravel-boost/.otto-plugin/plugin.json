@@ -1,0 +1,27 @@
+{
+  "name": "laravel-boost",
+  "version": "0.1.0",
+  "description": "Otto wrapper for Laravel Boost MCP support inside Laravel applications.",
+  "author": {
+    "name": "OttoAI",
+    "url": "https://github.com/LEG3NDY/otto-plugins-official"
+  },
+  "homepage": "https://github.com/laravel/boost",
+  "repository": "https://github.com/LEG3NDY/otto-plugins-official",
+  "license": "Apache-2.0",
+  "keywords": [
+    "laravel",
+    "mcp",
+    "php",
+    "artisan"
+  ],
+  "mcpServers": {
+    "laravel-boost": {
+      "command": "php",
+      "args": [
+        "artisan",
+        "boost:mcp"
+      ]
+    }
+  }
+}

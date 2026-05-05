@@ -1,0 +1,24 @@
+{
+  "name": "gitlab",
+  "version": "0.1.0",
+  "description": "Otto wrapper for the official GitLab MCP endpoint for repositories, merge requests, and CI.",
+  "author": {
+    "name": "OttoAI",
+    "url": "https://github.com/LEG3NDY/otto-plugins-official"
+  },
+  "homepage": "https://docs.gitlab.com/user/claudecode/",
+  "repository": "https://github.com/LEG3NDY/otto-plugins-official",
+  "license": "Apache-2.0",
+  "keywords": [
+    "gitlab",
+    "mcp",
+    "merge-requests",
+    "ci"
+  ],
+  "mcpServers": {
+    "gitlab": {
+      "type": "http",
+      "url": "https://gitlab.com/api/v4/mcp"
+    }
+  }
+}

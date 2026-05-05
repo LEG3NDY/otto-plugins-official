@@ -1,0 +1,27 @@
+{
+  "name": "playwright-mcp",
+  "version": "0.1.0",
+  "description": "Otto wrapper for the Microsoft Playwright MCP server for browser automation.",
+  "author": {
+    "name": "OttoAI",
+    "url": "https://github.com/LEG3NDY/otto-plugins-official"
+  },
+  "homepage": "https://github.com/microsoft/playwright-mcp",
+  "repository": "https://github.com/LEG3NDY/otto-plugins-official",
+  "license": "Apache-2.0",
+  "keywords": [
+    "playwright",
+    "mcp",
+    "browser",
+    "testing"
+  ],
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest"
+      ]
+    }
+  }
+}

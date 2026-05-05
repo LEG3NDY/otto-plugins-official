@@ -9,6 +9,8 @@ This repository includes Otto-native plugins and adapted content derived from pu
 
 Adapted content has been cleaned for Otto naming, `.otto` paths, Otto-host workflows, and explicit modified-file notices before inclusion here.
 
+This marketplace also catalogs third-party upstream plugins via remote `marketplace.json` entries. Those entries are referenced by source and are not copied into this repository. Otto only indexes public directory entries when they already point to an explicit upstream repository or package source, and those entries are tagged with `indexed-from-public-plugin-directory`.
+
 Included as adapted Apache-licensed source:
 
 - `frontend-design`
@@ -48,5 +50,20 @@ Intentionally excluded from this repository:
 - Anthropic-specific branding content such as `brand-guidelines`
 - Product-specific API guidance such as `claude-api`
 - Content with no clear redistribution license unless it is reimplemented Otto-native from scratch
+
+Remote mirrored entries follow a different rule:
+
+- the catalog metadata lives here
+- the plugin code stays upstream
+- licensing remains with the upstream repository referenced by the entry source
+- upstream-managed entries must not be presented as Otto-authored plugins
+- vendored `external_plugins/*` copies inside Anthropic's public marketplace repo are not used as Otto install sources
+
+Otto-maintained MCP compatibility wrappers follow another rule:
+
+- the wrapper manifest is authored in this repository
+- the server implementation remains with the upstream vendor or community project
+- no Anthropic-authored plugin code is copied into the wrapper
+- wrapper plugins currently cover `context7`, `firebase`, `github`, `gitlab`, `greptile`, `laravel-boost`, `linear`, `playwright-mcp`, `serena`, and `terraform`
 
 Where the original Apache-licensed source included a `LICENSE.txt`, that notice has been preserved alongside the adapted skill when copied directly. Rewritten ports carry plugin-level `NOTICE` files plus inline modified-file notices.

@@ -1,0 +1,28 @@
+{
+  "name": "firebase",
+  "version": "0.1.0",
+  "description": "Otto wrapper for the official Firebase MCP integration exposed by firebase-tools.",
+  "author": {
+    "name": "OttoAI",
+    "url": "https://github.com/LEG3NDY/otto-plugins-official"
+  },
+  "homepage": "https://github.com/firebase/firebase-tools",
+  "repository": "https://github.com/LEG3NDY/otto-plugins-official",
+  "license": "Apache-2.0",
+  "keywords": [
+    "firebase",
+    "google",
+    "mcp",
+    "database"
+  ],
+  "mcpServers": {
+    "firebase": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "firebase-tools@latest",
+        "mcp"
+      ]
+    }
+  }
+}

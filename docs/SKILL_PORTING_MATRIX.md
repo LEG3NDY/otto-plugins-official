@@ -105,3 +105,12 @@ The following skills are already represented in this repository:
 - Do not ship Anthropic branding or Claude API product guidance under Otto naming.
 - Do not import content without a clear redistribution license into the public marketplace.
 - Do not import highly product-specific VS Code, Gemini CLI, or Codex maintainer workflows without a deliberate Otto-native rewrite.
+
+## Remote catalog mirroring
+
+Some entries in `.otto-plugin/marketplace.json` are catalog mirrors, not ports.
+
+- Mirrored entries point to upstream plugin repositories using remote `source` objects.
+- They are tagged `indexed-from-public-plugin-directory` when indexed from a public plugin directory entry that already points to an explicit upstream source.
+- Mirroring is acceptable when Otto can consume the upstream structure directly without copying the source into this repository.
+- Porting rules above still apply whenever code or skill content is actually copied into `./plugins/*`.

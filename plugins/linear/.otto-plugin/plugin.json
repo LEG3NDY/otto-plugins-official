@@ -1,0 +1,24 @@
+{
+  "name": "linear",
+  "version": "0.1.0",
+  "description": "Otto wrapper for the official Linear MCP endpoint for issues and project workflows.",
+  "author": {
+    "name": "OttoAI",
+    "url": "https://github.com/LEG3NDY/otto-plugins-official"
+  },
+  "homepage": "https://linear.app/changelog/2025-11-17-remote-mcp-for-claude-code-and-cursor",
+  "repository": "https://github.com/LEG3NDY/otto-plugins-official",
+  "license": "Apache-2.0",
+  "keywords": [
+    "linear",
+    "mcp",
+    "issues",
+    "projects"
+  ],
+  "mcpServers": {
+    "linear": {
+      "type": "http",
+      "url": "https://mcp.linear.app/mcp"
+    }
+  }
+}

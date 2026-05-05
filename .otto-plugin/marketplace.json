@@ -6,7 +6,7 @@
   },
   "metadata": {
     "version": "0.1.0",
-    "description": "Official Otto marketplace with curated plugins for design, documentation, browser QA, frontend QA, MCP development, developer audit, marketplace operations, git workflows, plugin authoring, and skill authoring."
+    "description": "Official Otto marketplace with Otto-native plugins, Otto-maintained MCP wrappers, and curated third-party upstream plugins for developer tools, productivity, data, security, and app integrations."
   },
   "plugins": [
     {
@@ -478,6 +478,2468 @@
           "transport": "stdio"
         }
       }
+    },
+    {
+      "name": "context7",
+      "description": "Otto wrapper for the Context7 MCP server for version-aware documentation lookup.",
+      "category": "development",
+      "tags": [
+        "third-party",
+        "otto-maintained-wrapper",
+        "documentation",
+        "mcp"
+      ],
+      "source": "./plugins/context7",
+      "version": "0.1.0",
+      "strict": true
+    },
+    {
+      "name": "firebase",
+      "description": "Otto wrapper for the official Firebase MCP integration exposed by firebase-tools.",
+      "category": "database",
+      "tags": [
+        "third-party",
+        "otto-maintained-wrapper",
+        "firebase",
+        "mcp"
+      ],
+      "source": "./plugins/firebase",
+      "version": "0.1.0",
+      "strict": true
+    },
+    {
+      "name": "github",
+      "description": "Otto wrapper for the official GitHub remote MCP endpoint for repository workflows.",
+      "category": "productivity",
+      "tags": [
+        "third-party",
+        "otto-maintained-wrapper",
+        "github",
+        "mcp"
+      ],
+      "source": "./plugins/github",
+      "version": "0.1.0",
+      "strict": true
+    },
+    {
+      "name": "gitlab",
+      "description": "Otto wrapper for the official GitLab MCP endpoint for repositories, merge requests, and CI.",
+      "category": "productivity",
+      "tags": [
+        "third-party",
+        "otto-maintained-wrapper",
+        "gitlab",
+        "mcp"
+      ],
+      "source": "./plugins/gitlab",
+      "version": "0.1.0",
+      "strict": true
+    },
+    {
+      "name": "greptile",
+      "description": "Otto wrapper for the Greptile MCP endpoint for code search and PR review workflows.",
+      "category": "development",
+      "tags": [
+        "third-party",
+        "otto-maintained-wrapper",
+        "greptile",
+        "mcp"
+      ],
+      "source": "./plugins/greptile",
+      "version": "0.1.0",
+      "strict": true
+    },
+    {
+      "name": "laravel-boost",
+      "description": "Otto wrapper for Laravel Boost MCP support inside Laravel applications.",
+      "category": "development",
+      "tags": [
+        "third-party",
+        "otto-maintained-wrapper",
+        "laravel",
+        "mcp"
+      ],
+      "source": "./plugins/laravel-boost",
+      "version": "0.1.0",
+      "strict": true
+    },
+    {
+      "name": "linear",
+      "description": "Otto wrapper for the official Linear MCP endpoint for issues and project workflows.",
+      "category": "productivity",
+      "tags": [
+        "third-party",
+        "otto-maintained-wrapper",
+        "linear",
+        "mcp"
+      ],
+      "source": "./plugins/linear",
+      "version": "0.1.0",
+      "strict": true
+    },
+    {
+      "name": "playwright-mcp",
+      "description": "Otto wrapper for the Microsoft Playwright MCP server for browser automation.",
+      "category": "testing",
+      "tags": [
+        "third-party",
+        "otto-maintained-wrapper",
+        "playwright",
+        "mcp"
+      ],
+      "source": "./plugins/playwright-mcp",
+      "version": "0.1.0",
+      "strict": true
+    },
+    {
+      "name": "serena",
+      "description": "Otto wrapper for Serena semantic code analysis and navigation over MCP.",
+      "category": "development",
+      "tags": [
+        "third-party",
+        "otto-maintained-wrapper",
+        "serena",
+        "mcp"
+      ],
+      "source": "./plugins/serena",
+      "version": "0.1.0",
+      "strict": true
+    },
+    {
+      "name": "terraform",
+      "description": "Otto wrapper for the HashiCorp Terraform MCP server for IaC workflows.",
+      "category": "development",
+      "tags": [
+        "third-party",
+        "otto-maintained-wrapper",
+        "terraform",
+        "mcp"
+      ],
+      "source": "./plugins/terraform",
+      "version": "0.1.0",
+      "strict": true
+    },
+    {
+      "name": "42crunch-api-security-testing",
+      "description": "Automate API security directly in Claude Code with 42Crunch - automatically audit OpenAPI specs, detect vulnerabilities aligned with OWASP API Security risks (including BOLA/BFLA), and apply AI-powered fixes. Designed for AI-assisted development workflows, it provides continuous guardrails through an audit->scan->remediate->validate loop, ensuring APIs meet enterprise security standards before deployment.",
+      "category": "security",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/42Crunch-AI/claude-plugins.git",
+        "path": "plugins/api-security-testing",
+        "ref": "v1.0.1",
+        "sha": "56273e0e20762d76640838300a7431c4260cad32"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "42Crunch"
+      },
+      "homepage": "https://42crunch.com"
+    },
+    {
+      "name": "adobe-for-creativity",
+      "description": "Harness Adobe's creative AI-powered tools to edit images, automate design workflows, and bring creative visions to life — from background removal to vectorization and professional retouching.",
+      "category": "design",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/adobe/skills.git",
+        "path": "plugins/creative-cloud/adobe-for-creativity",
+        "ref": "main"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Adobe"
+      },
+      "homepage": "https://github.com/adobe/skills/tree/main/plugins/creative-cloud/adobe-for-creativity"
+    },
+    {
+      "name": "adspirer-ads-agent",
+      "description": "Cross-platform ad management for Google Ads, Meta Ads, TikTok Ads, and LinkedIn Ads. 91 tools for keyword research, campaign creation, performance analysis, and budget optimization.",
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/amekala/adspirer-mcp-plugin.git",
+        "sha": "c40623f1aa7b568e960d3f2e2558a6fcf10e6c18"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://www.adspirer.com"
+    },
+    {
+      "name": "agentforce-adlc",
+      "description": "Agentforce Agent Development Life Cycle — author, discover, scaffold, deploy, test, and optimize .agent files",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SalesforceAIResearch/agentforce-adlc.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/SalesforceAIResearch/agentforce-adlc"
+    },
+    {
+      "name": "ai-firstify",
+      "description": "AI-first project auditor and re-engineer based on the 9 design principles and 7 design patterns from the TechWolf AI-First Bootcamp",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/techwolf-ai/ai-first-toolkit.git",
+        "path": "plugins/ai-firstify",
+        "ref": "main",
+        "sha": "852272ec21cebab98202df967dffee127209b6bc"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://ai-first.techwolf.ai"
+    },
+    {
+      "name": "ai-plugins",
+      "description": "Set up endorctl and use Endor Labs to scan, prioritize, and fix security risks across your software supply chain",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/endorlabs/ai-plugins.git",
+        "sha": "975f0ce422b1f2677681ffd085aef34ea1826b70"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://www.endorlabs.com"
+    },
+    {
+      "name": "aikido",
+      "description": "Aikido Security scanning for Claude Code — SAST, secrets, and IaC vulnerability detection powered by the Aikido MCP server.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/AikidoSec/aikido-claude-plugin.git",
+        "sha": "5d9c13d367218e9b43a11d4502f623ab98859225"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/AikidoSec/aikido-claude-plugin"
+    },
+    {
+      "name": "aiven",
+      "description": "Easily deploy managed PostgreSQL, Kafka, OpenSearch, Clickhouse, and other databases, streaming, and apps through Aiven. Free tier available, up and running in minutes.",
+      "category": "database",
+      "source": {
+        "source": "github",
+        "repo": "aiven/aiven-ai-plugins",
+        "sha": "d2a7697b53826588d0faf795f39d2aa2362330da"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Aiven"
+      },
+      "homepage": "https://aiven.io"
+    },
+    {
+      "name": "alloydb",
+      "description": "Create, connect, and interact with an AlloyDB for PostgreSQL database and data.",
+      "category": "database",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/gemini-cli-extensions/alloydb.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Google LLC"
+      },
+      "homepage": "https://cloud.google.com/alloydb"
+    },
+    {
+      "name": "amazon-location-service",
+      "description": "Guide developers through adding maps, places search, geocoding, routing, and other geospatial features with Amazon Location Service, including authentication setup, SDK integration, and best practices.",
+      "category": "location",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/awslabs/agent-plugins.git",
+        "path": "plugins/amazon-location-service",
+        "ref": "main"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/awslabs/agent-plugins"
+    },
+    {
+      "name": "amplitude",
+      "description": "Use Amplitude as an expert analyst — instrument Amplitude, discover product opportunities, analyze charts, create dashboards, manage experiments, and understand users and accounts.",
+      "category": "monitoring",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/amplitude/mcp-marketplace.git",
+        "path": "plugins/amplitude",
+        "ref": "main"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/amplitude/mcp-marketplace"
+    },
+    {
+      "name": "apollo",
+      "description": "Prospect, enrich leads, load outreach sequences, and query sales analytics with Apollo.io — one-click MCP server integration for Claude Code and Cowork.",
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/apolloio/apollo-mcp-plugin.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Apollo.io"
+      },
+      "homepage": "https://www.apollo.io/"
+    },
+    {
+      "name": "astronomer-data-agents",
+      "description": "Data engineering for Apache Airflow and Astronomer. Author DAGs with best practices, debug pipeline failures, trace data lineage, profile tables, migrate Airflow 2 to 3, and manage local and cloud deployments.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/astronomer/agents.git",
+        "sha": "5935c4330dea4dfb8e93568956b10a543ecdb3d1"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/astronomer/agents"
+    },
+    {
+      "name": "atlan",
+      "description": "Atlan data catalog plugin for Claude Code. Search, explore, govern, and manage your data assets through natural language. Powered by the Atlan MCP server with semantic search, lineage traversal, glossary management, data quality rules, and more.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/atlanhq/agent-toolkit.git",
+        "sha": "acdf284da6aa98b14f8dad90a9827006d8df425c"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://docs.atlan.com/"
+    },
+    {
+      "name": "atlassian",
+      "description": "Connect to Atlassian products including Jira and Confluence. Search and create issues, access documentation, manage sprints, and integrate your development workflow with Atlassian's collaboration tools.",
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/atlassian/atlassian-mcp-server.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/atlassian/atlassian-mcp-server"
+    },
+    {
+      "name": "atlassian-forge-skills",
+      "description": "Forge-focused skill bundle and MCP tooling for Atlassian Forge: scaffold apps, review before deploy, debug production issues, and stay current on Forge APIs and the Atlassian Design System.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/atlassian/forge-skills.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Atlassian Labs"
+      },
+      "homepage": "https://developer.atlassian.com"
+    },
+    {
+      "name": "atomic-agents",
+      "description": "Comprehensive development workflow for building AI agents with the Atomic Agents framework. Includes specialized agents for schema design, architecture planning, code review, and tool development. Features guided workflows, progressive-disclosure skills, and best practice validation.",
+      "category": "development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/BrainBlend-AI/atomic-agents.git",
+        "path": "claude-plugin/atomic-agents"
+      },
+      "strict": false,
+      "tags": [
+        "community-managed",
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/BrainBlend-AI/atomic-agents"
+    },
+    {
+      "name": "auth0",
+      "description": "Add authentication to any app with Auth0. This plugin detects your framework, scaffolds the right Auth0 SDK integration, and guides you through login, logout, sessions, and protected routes — using current SDK patterns.",
+      "category": "security",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/auth0/agent-skills.git",
+        "path": "plugins/auth0",
+        "ref": "main"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Auth0"
+      },
+      "homepage": "https://auth0.com/docs/quickstart/agent-skills"
+    },
+    {
+      "name": "aws-amplify",
+      "description": "Build full-stack apps with AWS Amplify Gen 2 using guided workflows for authentication, data models, storage, GraphQL APIs, and Lambda functions.",
+      "category": "development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/awslabs/agent-plugins.git",
+        "path": "plugins/aws-amplify",
+        "ref": "main"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/awslabs/agent-plugins"
+    },
+    {
+      "name": "aws-dev-toolkit",
+      "description": "AWS development toolkit — 34 skills, 11 agents, and 3 MCP servers for building, migrating, and performing architecture reviews on AWS.",
+      "category": "development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/aws-samples/sample-claude-code-plugins-for-startups.git",
+        "path": "plugins/aws-dev-toolkit",
+        "ref": "main",
+        "sha": "ddea7fdd605b42ed3900374815f358a2d4600db5"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "aws-samples"
+      },
+      "homepage": "https://github.com/aws-samples/sample-claude-code-plugins-for-startups"
+    },
+    {
+      "name": "aws-serverless",
+      "description": "Design, build, deploy, test, and debug serverless applications with AWS Serverless services.",
+      "category": "development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/awslabs/agent-plugins.git",
+        "path": "plugins/aws-serverless",
+        "ref": "main"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/awslabs/agent-plugins"
+    },
+    {
+      "name": "azure",
+      "description": "Transform Claude into an Azure expert. This plugin integrates the Azure MCP server and specialized Azure skills to move beyond generic advice. It enables Claude to perform real-world tasks: listing resources, validating deployments, diagnosing infrastructure issues, and optimizing costs across 50+ Azure services.",
+      "category": "deployment",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/microsoft/azure-skills.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/microsoft/azure-skills"
+    },
+    {
+      "name": "azure-cosmos-db-assistant",
+      "description": "Expert assistant for Azure Cosmos DB — data modeling, query optimization, performance tuning, and best practices.",
+      "category": "database",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/AzureCosmosDB/cosmosdb-claude-code-plugin.git",
+        "sha": "23c168856e4435793bd27a72d4714f022a3a1e90"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/AzureCosmosDB/cosmosdb-claude-code-plugin"
+    },
+    {
+      "name": "base44",
+      "description": "Build and deploy Base44 full-stack apps with CLI project management and JavaScript/TypeScript SDK development skills",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/base44/skills.git",
+        "sha": "c7039b37eca0e2916a565a7395040c00055bcf8b"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://docs.base44.com"
+    },
+    {
+      "name": "bigdata-com",
+      "description": "Official Bigdata.com plugin providing financial research, analytics, and intelligence tools powered by Bigdata MCP.",
+      "category": "database",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Bigdata-com/bigdata-plugins-marketplace.git",
+        "path": "plugins/bigdata-com",
+        "ref": "main"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "RavenPack"
+      },
+      "homepage": "https://docs.bigdata.com"
+    },
+    {
+      "name": "box",
+      "description": "Work with your Box content directly from Claude Code — search files, organize folders, collaborate with your team, and use Box AI to answer questions, summarize documents, and extract data without leaving your workflow.",
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/box/box-for-ai.git",
+        "sha": "0fb23244e3c35cd562206c80eff1e22c456046ea"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/box/box-for-ai"
+    },
+    {
+      "name": "brightdata-plugin",
+      "description": "Web scraping, Google search, structured data extraction, and MCP server integration powered by Bright Data. Includes 7 skills: scrape any webpage as markdown (with bot detection/CAPTCHA bypass), search Google with structured JSON results, extract data from 40+ websites (Amazon, LinkedIn, Instagram, TikTok, YouTube, and more), orchestrate Bright Data's 60+ MCP tools, built-in best practices for Web Unlocker, SERP API, Web Scraper API, and Browser API, Python SDK best practices for the brightda...",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/brightdata/skills.git",
+        "sha": "44b24797d82cfd535c5b97831d5c6ba86c9d60df"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://docs.brightdata.com"
+    },
+    {
+      "name": "cds-mcp",
+      "description": "AI-assisted development of SAP Cloud Application Programming Model (CAP) projects. Search CDS models and CAP documentation.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/cap-js/mcp-server.git",
+        "sha": "4d59d7070a52761a9b8028cbe710c8d7477cbc92"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://cap.cloud.sap/"
+    },
+    {
+      "name": "chrome-devtools-mcp",
+      "description": "Control and inspect a live Chrome browser from your coding agent. Record performance traces, analyze network requests, check console messages with source-mapped stack traces, and automate browser actions with Puppeteer.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp.git",
+        "sha": "a1612be8e01401cf1711c64bc2ef5da5763ba956"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+    },
+    {
+      "name": "circleback",
+      "description": "Circleback conversational context integration. Search and access meetings, emails, calendar events, and more.",
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/circlebackai/claude-code-plugin.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/circlebackai/claude-code-plugin.git"
+    },
+    {
+      "name": "cloud-sql-postgresql",
+      "description": "Create, connect, and interact with a Cloud SQL for PostgreSQL database and data.",
+      "category": "database",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/gemini-cli-extensions/cloud-sql-postgresql.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Google LLC"
+      },
+      "homepage": "https://cloud.google.com/sql"
+    },
+    {
+      "name": "cloudflare",
+      "description": "Skills for the Cloudflare developer platform: Workers, Durable Objects, Agents SDK, MCP servers, Wrangler CLI, and web performance.",
+      "category": "deployment",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/cloudflare/skills.git",
+        "sha": "0397d7d88fa6ac7517a88389622eb0799e86ded2"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/cloudflare/skills"
+    },
+    {
+      "name": "cloudinary",
+      "description": "Use Cloudinary directly in Claude. Manage assets, apply transformations, optimize media, and more through natural conversation.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/cloudinary-devs/cloudinary-plugin.git",
+        "sha": "7b443d7dbd607bfe4850d8cfcab6ba4cbf1a57c3"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://cloudinary.com/documentation"
+    },
+    {
+      "name": "cockroachdb",
+      "description": "Connect Claude Code directly to your CockroachDB clusters for hands-on database work — explore schemas, write optimized SQL, debug queries, and manage distributed database clusters. This plugin provides 14 tools across two active MCP backends (self-hosted MCP Toolbox and managed CockroachDB Cloud MCP Server), three specialized agents (DBA, Developer, Operator), 32 skills across 6 operational domains, and built-in safety hooks.",
+      "category": "database",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/cockroachdb/claude-plugin.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Cockroach Labs"
+      },
+      "homepage": "https://github.com/cockroachdb/claude-plugin"
+    },
+    {
+      "name": "coderabbit",
+      "description": "Your code review partner. CodeRabbit provides external validation using a specialized AI architecture and 40+ integrated static analyzers—offering a different perspective that catches bugs, security vulnerabilities, logic errors, and edge cases. Context-aware analysis via AST parsing and codegraph relationships. Automatically incorporates CLAUDE.md and project coding guidelines into reviews. Useful after writing or modifying code, before commits, when implementing complex or security-sensitive logic, or when a second opinion would increase confidence in the changes. Returns specific findings with suggested fixes that can be applied immediately. Free to use.",
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/coderabbitai/skills.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/coderabbitai/skills"
+    },
+    {
+      "name": "crowdstrike-falcon-foundry",
+      "description": "CrowdStrike Falcon Foundry development skills for building cybersecurity applications on the Falcon platform. Includes UI development, collections, functions, workflows, API integration, security patterns, and debugging workflows.",
+      "category": "security",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/CrowdStrike/foundry-skills.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "CrowdStrike"
+      },
+      "homepage": "https://github.com/CrowdStrike/foundry-skills"
+    },
+    {
+      "name": "data",
+      "description": "Data engineering for Apache Airflow and Astronomer. Author DAGs with best practices, debug pipeline failures, trace data lineage, profile tables, migrate Airflow 2 to 3, and manage local and cloud deployments.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/astronomer/agents.git",
+        "sha": "5935c4330dea4dfb8e93568956b10a543ecdb3d1"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/astronomer/agents"
+    },
+    {
+      "name": "data-agent-kit-starter-pack",
+      "description": "Specialized suite of skills for data engineers on Google Cloud — architect data pipelines, transform data with dbt, write Spark and BigQuery SQL notebooks, and orchestrate end-to-end workflows across BigQuery, Spanner, BigLake, and Dataproc.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/gemini-cli-extensions/data-agent-kit-starter-pack.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Google LLC"
+      },
+      "homepage": "https://cloud.google.com/bigquery"
+    },
+    {
+      "name": "data-engineering",
+      "description": "Data engineering plugin - warehouse exploration, pipeline authoring, Airflow integration",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/astronomer/agents.git",
+        "sha": "5935c4330dea4dfb8e93568956b10a543ecdb3d1"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/astronomer/agents"
+    },
+    {
+      "name": "databases-on-aws",
+      "description": "Expert database guidance for the AWS database portfolio. Design schemas, execute queries, handle migrations, and choose the right database for your workload.",
+      "category": "database",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/awslabs/agent-plugins.git",
+        "path": "plugins/databases-on-aws",
+        "ref": "main"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/awslabs/agent-plugins"
+    },
+    {
+      "name": "datadog",
+      "description": "Use Datadog directly in Claude Code through a preconfigured Datadog MCP server. Query logs, metrics, traces, dashboards, and more through natural conversation. This plugin is in preview.",
+      "category": "monitoring",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/datadog-labs/claude-code-plugin.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Datadog"
+      },
+      "homepage": "https://www.datadoghq.com/"
+    },
+    {
+      "name": "datarobot-agent-skills",
+      "description": "DataRobot skills for AI/ML workflows — model training, deployment, predictions, feature engineering, monitoring, explainability, data preparation, App Framework CI/CD, and external agent monitoring.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/datarobot-oss/datarobot-agent-skills.git",
+        "sha": "b3e8fd33d7c36592c802359026c15f3e067a0646"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "DataRobot"
+      },
+      "homepage": "https://datarobot.com"
+    },
+    {
+      "name": "dataverse",
+      "description": "Agent skills for building on, analyzing, and managing Microsoft Dataverse — with Dataverse MCP, PAC CLI, and Python SDK.",
+      "category": "database",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/microsoft/Dataverse-skills.git",
+        "path": ".github/plugins/dataverse",
+        "ref": "main"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/microsoft/Dataverse-skills"
+    },
+    {
+      "name": "deploy-on-aws",
+      "description": "Deploy applications to AWS with architecture recommendations, cost estimates, and IaC deployment.",
+      "category": "deployment",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/awslabs/agent-plugins.git",
+        "path": "plugins/deploy-on-aws",
+        "ref": "main"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/awslabs/agent-plugins"
+    },
+    {
+      "name": "desktop-commander",
+      "description": "MCP server for terminal commands, process management, and file operations across text, code, PDF, DOCX, Excel, images, and structured data.",
+      "category": "productivity",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP.git",
+        "path": "plugins/claude",
+        "ref": "main",
+        "sha": "8c03d3392d1633923057f4492f2b5014e2c4a6bf"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Desktop Commander"
+      },
+      "homepage": "https://desktopcommander.app"
+    },
+    {
+      "name": "elixir-ls-lsp",
+      "description": "Elixir language server (ElixirLS) for Claude Code — provides code intelligence and diagnostics for .ex, .exs, and .heex files.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/MikaelFangel/claude-elixir-ls-lsp.git",
+        "sha": "806a6eeeb88b9a306a59b3212a1d5d88aa5c70af"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://elixir-lsp.github.io/elixir-ls/"
+    },
+    {
+      "name": "exa",
+      "description": "Exa AI web search, deep research, and content extraction. Provides MCP tools and research skills for comprehensive web search, people discovery, company research, academic papers, and more.",
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/exa-labs/exa-mcp-server.git",
+        "sha": "bd2ccdd52ca7a35fbc2207ad266bb2a961c0e793"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Exa"
+      },
+      "homepage": "https://exa.ai/docs/reference/exa-mcp"
+    },
+    {
+      "name": "expo",
+      "description": "Official Expo skills for building, deploying, upgrading, and debugging React Native apps with Expo. Covers UI development with Expo Router, SwiftUI and Jetpack Compose components, Tailwind CSS setup, API routes, data fetching, CI/CD workflows, App Store and Play Store deployment, SDK upgrades, DOM components, and dev client distribution.",
+      "category": "development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/expo/skills.git",
+        "path": "plugins/expo",
+        "ref": "main"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/expo/skills/blob/main/plugins/expo/README.md"
+    },
+    {
+      "name": "fastly-agent-toolkit",
+      "description": "Fastly development tools and platform skills",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/fastly/fastly-agent-toolkit.git",
+        "sha": "329331c887512850f13e481b45c4298c0387a4d2"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/fastly/fastly-agent-toolkit/blob/main/README.md"
+    },
+    {
+      "name": "fiftyone",
+      "description": "Build high-quality datasets and computer vision models. Visualize datasets, analyze models, find duplicates, run inference, evaluate predictions, and develop custom plugins.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/voxel51/fiftyone-skills.git",
+        "sha": "02bd4ea170ca01a751c2d2dd6bf2df8f62e65626"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://docs.voxel51.com/"
+    },
+    {
+      "name": "figma",
+      "description": "Figma design platform integration. Access design files, extract component information, read design tokens, and translate designs into code. Bridge the gap between design and development workflows.",
+      "category": "design",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/figma/mcp-server-guide.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/figma/mcp-server-guide"
+    },
+    {
+      "name": "firecrawl",
+      "description": "Web scraping and crawling powered by Firecrawl. Turn any website into clean, LLM-ready markdown or structured data. Scrape single pages, crawl entire sites, search the web, and extract structured information. Includes an AI agent for autonomous multi-source data gathering - just describe what you need and it finds, navigates, and extracts automatically.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/firecrawl/firecrawl-claude-plugin.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/firecrawl/firecrawl-claude-plugin.git"
+    },
+    {
+      "name": "firetiger",
+      "description": "Claude Code plugin for Firetiger observability workflows and MCP-powered investigations.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/firetiger-oss/claude-plugin.git",
+        "sha": "51421ce20adc7c30eb014e6847c7087ed34cb879"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://www.firetiger.com/"
+    },
+    {
+      "name": "flint",
+      "description": "Build and manage websites with Flint's AI website builder through natural conversation.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/tryflint/claude-code-plugin.git",
+        "sha": "f3d56e33ed2fb3ed9b4f02e0fc65d0a79b24bf4d"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://www.tryflint.com/docs/claude-code-plugin"
+    },
+    {
+      "name": "followrabbit",
+      "description": "Cloud cost optimization for GCP infrastructure. Review changes for cost impact and auto-apply savings recommendations using the followrabbit CLI.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/followrabbit-ai/awesome-rabbit.git",
+        "sha": "6926154501300d348a7b50d47479648fe87985b6"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://subscriptions.agentic.followrabbit.ai/"
+    },
+    {
+      "name": "fullstory",
+      "description": "Connect Claude to Fullstory to query behavioral analytics, session replays, and customer experience insights.",
+      "category": "monitoring",
+      "source": {
+        "source": "github",
+        "repo": "fullstorydev/fullstory-skills",
+        "sha": "1ec5865e7ab1449f9a0859d164c4b6a8c53b6e2f"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Fullstory"
+      },
+      "homepage": "https://www.fullstory.com"
+    },
+    {
+      "name": "goodmem",
+      "description": "GoodMem memory infrastructure for AI agents. Use Python SDK skills to write code that manages embedders, spaces, and memories, or use MCP tools to perform GoodMem operations directly via natural language.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/PAIR-Systems-Inc/goodmem-claude-code-plugin.git",
+        "sha": "4e23ab2b3bc7cb4167c99e10d9640ad7089744d7"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/PAIR-Systems-Inc/goodmem-claude-code-plugin"
+    },
+    {
+      "name": "helius",
+      "description": "Build on Solana with Helius — live blockchain tools, expert coding patterns, and autonomous account signup",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/helius-labs/core-ai.git",
+        "path": "helius-plugin",
+        "ref": "main",
+        "sha": "d9d252497bcf1e4bd5073a76715cd50a8353f9c3"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://www.helius.dev/docs"
+    },
+    {
+      "name": "huggingface-skills",
+      "description": "Build, train, evaluate, and use open source AI models, datasets, and spaces.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/huggingface/skills.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/huggingface/skills.git"
+    },
+    {
+      "name": "intercom",
+      "description": "Intercom integration for Claude Code. Search conversations, analyze customer support patterns, look up contacts and companies, and install the Intercom Messenger. Connect your Intercom workspace to get real-time insights from customer data.",
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/intercom/claude-plugin-external.git",
+        "sha": "52653572c47700443eb61154c4e4334a355e755e"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/intercom/claude-plugin-external"
+    },
+    {
+      "name": "jfrog",
+      "description": "Use the JFrog Platform from Claude Code: Artifactory repos and artifacts, security findings and exposures, Catalog package safety and downloads, workflows across the SDLC, and platform administration.",
+      "category": "security",
+      "source": {
+        "source": "github",
+        "repo": "jfrog/claude-plugin",
+        "sha": "761921eaa12b845beba1688d699a2d45091dfe83"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "JFrog Ltd.",
+        "url": "https://jfrog.com"
+      },
+      "homepage": "https://jfrog.com"
+    },
+    {
+      "name": "legalzoom",
+      "description": "Attorney guidance and legal tools for business and personal needs. AI-powered document review identifies critical risks and important clauses, advises when to engage an attorney, and routes to LegalZoom's network when professional expertise is needed.",
+      "category": "productivity",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/legalzoom/claude-plugins.git",
+        "path": "plugins/legalzoom",
+        "ref": "main",
+        "sha": "f9fd8a0ca6e1421bc1aacb113a109663a7a6f6d8"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://www.legalzoom.com/"
+    },
+    {
+      "name": "liquid-lsp",
+      "description": "LSP integration for Shopify Liquid templates via the Shopify CLI theme language server.",
+      "category": "development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Shopify/liquid-skills.git",
+        "path": "plugins/liquid-lsp",
+        "ref": "main",
+        "sha": "a00ca039d82114a7af1b4cbc3025b16c624a42fa"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Shopify"
+      },
+      "homepage": "https://github.com/Shopify/liquid-skills/tree/main/plugins/liquid-lsp"
+    },
+    {
+      "name": "liquid-skills",
+      "description": "Liquid language fundamentals, CSS/JS/HTML coding standards, and WCAG accessibility patterns for Shopify themes",
+      "category": "development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Shopify/liquid-skills.git",
+        "path": "plugins/liquid-skills",
+        "ref": "main",
+        "sha": "bf7a7aa9f9809b0dcd80cb5f7fd2795a7208a7a3"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Shopify"
+      },
+      "homepage": "https://github.com/Shopify/liquid-skills/tree/main/plugins/liquid-skills"
+    },
+    {
+      "name": "logfire",
+      "description": "Add Logfire observability to Python applications with auto-instrumentation for FastAPI, httpx, asyncpg, SQLAlchemy, and more",
+      "category": "monitoring",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/pydantic/skills.git",
+        "path": "plugins/logfire",
+        "ref": "main"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Pydantic"
+      },
+      "homepage": "https://github.com/pydantic/skills/tree/main/plugins/logfire"
+    },
+    {
+      "name": "microsoft-docs",
+      "description": "Access official Microsoft documentation, API references, and code samples for Azure, .NET, Windows, and more.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/MicrosoftDocs/mcp.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/microsoftdocs/mcp"
+    },
+    {
+      "name": "mintlify",
+      "description": "Build beautiful documentation sites with Mintlify. Convert non-markdown files into properly formatted MDX pages, add and modify content with correct component use, and automate documentation updates.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mintlify/mintlify-claude-plugin.git",
+        "sha": "acd6d2e0128c4f235d55cfb8d8c91ecbdd5df8cc"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://www.mintlify.com/"
+    },
+    {
+      "name": "miro",
+      "description": "Secure access to Miro boards. Enables AI to read board context, create diagrams, and generate code with enterprise-grade security.",
+      "category": "design",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/miroapp/miro-ai.git",
+        "path": "claude-plugins/miro",
+        "ref": "main"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Miro"
+      },
+      "homepage": "https://miro.com"
+    },
+    {
+      "name": "mongodb",
+      "description": "Official Claude plugin for MongoDB (MCP Server + Skills). Connect to databases, explore data, manage collections, optimize queries, generate reliable code, implement best practices, develop advanced features, and more.",
+      "category": "database",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mongodb/agent-skills.git",
+        "sha": "24529d9540b962d57f30e75d25071bebea5809ad"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://www.mongodb.com/docs/mcp-server/overview/"
+    },
+    {
+      "name": "neon",
+      "description": "Manage your Neon projects and databases with the neon-postgres agent skill and the Neon MCP Server.",
+      "category": "database",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/neondatabase/agent-skills.git",
+        "path": "plugins/neon-postgres",
+        "ref": "main",
+        "sha": "1438d7db4560a649d62eba99e9d5008b77ac5758"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/neondatabase/agent-skills/tree/main/plugins/neon-postgres"
+    },
+    {
+      "name": "netlify-skills",
+      "description": "Netlify platform skills for Claude Code — functions, edge functions, blobs, database, image CDN, forms, config, CLI, frameworks, caching, AI gateway, and deployment.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/netlify/context-and-tools.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/netlify/context-and-tools"
+    },
+    {
+      "name": "netsuite-suitecloud",
+      "description": "NetSuite agent skills from Oracle — authoring guidance for SuiteCloud Development Framework (SDF) objects and UIF single-page-app components, plus runtime guidance for the NetSuite AI Service Connector.",
+      "category": "development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/oracle/netsuite-suitecloud-sdk.git",
+        "path": "packages/agent-skills",
+        "ref": "master",
+        "sha": "43bacf43763e1eedd0892b4652be3d45df94f0e7"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Oracle NetSuite"
+      },
+      "skills": [
+        "./netsuite-ai-connector-instructions",
+        "./netsuite-sdf-roles-and-permissions",
+        "./netsuite-uif-spa-reference"
+      ],
+      "homepage": "https://github.com/oracle/netsuite-suitecloud-sdk"
+    },
+    {
+      "name": "nightvision",
+      "description": "Skills for working with NightVision, a DAST and API Discovery platform that finds exploitable vulnerabilities in web applications and REST APIs",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nvsecurity/nightvision-skills.git",
+        "sha": "7d7a3f342bbf4d02b6e012279800cf91ff0c1c97"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/nvsecurity/nightvision-skills"
+    },
+    {
+      "name": "nimble",
+      "description": "Nimble web data toolkit — search, extract, map, crawl the web and work with structured data agents",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Nimbleway/agent-skills.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://docs.nimbleway.com/integrations/agent-skills/plugin-installation"
+    },
+    {
+      "name": "notion",
+      "description": "Notion workspace integration. Search pages, create and update documents, manage databases, and access your team's knowledge base directly from Claude Code for seamless documentation workflows.",
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/makenotion/claude-code-notion-plugin.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/makenotion/claude-code-notion-plugin"
+    },
+    {
+      "name": "opsera-devsecops",
+      "description": "Opsera DevSecOps Agent — AI-powered architecture analysis, security scanning, compliance auditing, and SQL security for your codebase. Free trial included.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/opsera-agents/opsera-devsecops.git",
+        "sha": "e797228134ee7d3199594eb0ee5a659df40c91da"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://opsera.ai/agents"
+    },
+    {
+      "name": "optibot",
+      "description": "AI code review that catches production-breaking bugs, business logic issues, and security vulnerabilities — directly in Claude Code.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Optimal-AI/optibot-skill.git",
+        "sha": "ce2be448ee713606aa653fc93ef2f98a200fe327"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://getoptimal.ai"
+    },
+    {
+      "name": "oracle-ai-data-platform-workbench-spark-connectors",
+      "description": "Oracle AI Data Platform Workbench Spark connectors for Claude Code. 18 connector skills covering every data source workbench customers commonly need: Oracle Autonomous DB family (ALH/ADW/ATP) via wallet/IAM-DB-Token/API-key, ExaCS, Fusion ERP REST, Fusion BICC, EPM Cloud Planning, Essbase 21c, OCI Streaming (Kafka), OCI Object Storage, Apache Iceberg, plus external systems (PostgreSQL, MySQL/HeatWave, SQL Server, Snowflake, Azure ADLS Gen2, AWS S3, generic REST, custom JDBC, Excel). Live-validated on the workbench `tpcds` cluster (Spark 3.5.0): 17 PASS / 4 ship-as-is out of 21 test rows.",
+      "category": "development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/oracle-samples/oracle-aidp-samples.git",
+        "path": "ai/claude-code-plugins/oracle-ai-data-platform-workbench-spark-connectors",
+        "ref": "main",
+        "sha": "f436f3a40dfaedbef6a076ad3992b697ba5dcef6"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Oracle"
+      },
+      "homepage": "https://docs.oracle.com/en/cloud/paas/ai-data-platform/index.html"
+    },
+    {
+      "name": "pagerduty",
+      "description": "Enhance code quality and security through PagerDuty risk scoring and incident correlation. Score pre-commit diffs against historical incident data and surface deployment risk before you ship.",
+      "category": "monitoring",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/PagerDuty/claude-code-plugins.git",
+        "sha": "b16c23e0d790deceaa7a6182616d0e36673f2eae"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/PagerDuty/claude-code-plugins"
+    },
+    {
+      "name": "pinecone",
+      "description": "Pinecone vector database integration. Streamline your Pinecone development with powerful tools for managing vector indexes, querying data, and rapid prototyping. Use slash commands like /quickstart to generate AGENTS.md files and initialize Python projects and /query to quickly explore indexes. Access the Pinecone MCP server for creating, describing, upserting and querying indexes with Claude. Perfect for developers building semantic search, RAG applications, recommendation systems, and other vector-based applications with Pinecone.",
+      "category": "database",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/pinecone-io/pinecone-claude-code-plugin.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/pinecone-io/pinecone-claude-code-plugin"
+    },
+    {
+      "name": "planetscale",
+      "description": "An authenticated hosted MCP server that accesses your PlanetScale organizations, databases, branches, schema, and Insights data. Query against your data, surface slow queries, and get organizational and account information.",
+      "category": "database",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/planetscale/claude-plugin.git",
+        "sha": "f1066cac5bb956bbbb05918f5b07fe0e873d44ea"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://planetscale.com/"
+    },
+    {
+      "name": "posthog",
+      "description": "Access PostHog analytics, feature flags, experiments, error tracking, and insights directly from Claude Code.",
+      "category": "monitoring",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/PostHog/ai-plugin.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://posthog.com/docs/model-context-protocol"
+    },
+    {
+      "name": "postiz",
+      "description": "Social media automation CLI for scheduling posts, managing integrations, uploading media, and tracking analytics across 28+ platforms including X, LinkedIn, Reddit, YouTube, TikTok, Instagram, and more",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/gitroomhq/postiz-agent.git",
+        "sha": "37d627244c53a4b3a7ca94c52cc2db13aaaf468e"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://postiz.com/agent"
+    },
+    {
+      "name": "postman",
+      "description": "Full API lifecycle management for Claude Code. Sync collections, generate client code, discover APIs, run tests, create mocks, publish docs, and audit security. Powered by the Postman MCP Server.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Postman-Devrel/postman-claude-code-plugin.git",
+        "sha": "416e40da03a237df7bf03f4362cf6fc7b989b567"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://learning.postman.com/docs/developer/postman-mcp-server/"
+    },
+    {
+      "name": "prisma",
+      "description": "Prisma MCP integration for Postgres database management, schema migrations, SQL queries, and connection string management. Provision Prisma Postgres databases, run migrations, and interact with your data directly.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/prisma/claude-plugin.git",
+        "sha": "815dbc4a045a29e3b81510ba0e3ab806f1baaf0e"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://prisma.io"
+    },
+    {
+      "name": "product-tracking-skills",
+      "description": "AI agent skills that make SaaS products data-ready for product analytics — from codebase scan to tracking plan to working instrumentation code.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Accoil/product-tracking-skills.git",
+        "sha": "341f8cf47d8b5dda550222152377c50aee34c723"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://www.accoil.com/product-tracking"
+    },
+    {
+      "name": "pydantic-ai",
+      "description": "Write accurate Pydantic AI code from the start. Up-to-date patterns, decision trees, and common gotchas for agents, tools, structured output, streaming, and multi-agent apps.",
+      "category": "development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/pydantic/skills.git",
+        "path": "plugins/ai",
+        "ref": "main"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/pydantic/skills/tree/main/plugins/ai"
+    },
+    {
+      "name": "qodo-skills",
+      "description": "Qodo Skills provides a curated library of reusable AI agent capabilities that extend Claude's functionality for software development workflows. Each skill is designed to integrate seamlessly into your development process, enabling tasks like code quality checks, automated testing, security scanning, and compliance validation. Skills operate across your entire SDLC—from IDE to CI/CD—ensuring consistent standards and catching issues early.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/qodo-ai/qodo-skills.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/qodo-ai/qodo-skills.git"
+    },
+    {
+      "name": "qt-development-skills",
+      "description": "Agentic engineering skills for Qt software development — Qt C++/QML code review, QML coding, and Qt C++/QML code documentation.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/TheQtCompanyRnD/agent-skills.git",
+        "sha": "62a98e2339e6eefcff108cfc3fe9db8a7301856c"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Qt Group"
+      },
+      "homepage": "https://www.qt.io/"
+    },
+    {
+      "name": "quarkus-agent",
+      "description": "MCP server for AI coding agents to create, manage, and interact with Quarkus applications. Provides tools for project scaffolding, dev mode lifecycle, extension skills, Dev MCP proxy, and documentation search.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/quarkusio/quarkus-agent-mcp.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Quarkus"
+      },
+      "homepage": "https://quarkus.io"
+    },
+    {
+      "name": "rails-query",
+      "description": "Run read-only database queries against a Ruby on Rails 8.2+ app's database via `rails query` — ActiveRecord or SQL, schema/model introspection, EXPLAIN, pagination, and remote execution via Kamal.",
+      "category": "development",
+      "source": {
+        "source": "github",
+        "repo": "lewispb/rails-query-skill",
+        "sha": "0f53fa861089e1f46097db9a92aea311f340c355"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Lewis Buckley",
+        "url": "https://github.com/lewispb"
+      },
+      "homepage": "https://github.com/lewispb/rails-query-skill"
+    },
+    {
+      "name": "railway",
+      "description": "Deploy and manage apps, databases, and infrastructure on Railway. Covers project setup, deploys, environment configuration, networking, troubleshooting, and monitoring.",
+      "category": "deployment",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/railwayapp/railway-skills.git",
+        "path": "plugins/railway",
+        "ref": "main",
+        "sha": "eaa89d8f594412b0b837b6531241e7d166e12202"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://docs.railway.com/ai/claude-code-plugin"
+    },
+    {
+      "name": "rc",
+      "description": "Configure RevenueCat projects, apps, products, entitlements, and offerings directly from Claude Code. Manage your in-app purchase backend without leaving your development workflow.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/RevenueCat/rc-claude-code-plugin.git",
+        "sha": "af7cb77996aee4e7e3c109c5afec81f716139032"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://www.revenuecat.com"
+    },
+    {
+      "name": "remember",
+      "description": "Continuous memory for Claude Code. Extracts, summarizes, and compresses conversations into tiered daily logs. Claude remembers what you did yesterday.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Digital-Process-Tools/claude-remember.git",
+        "sha": "914445ac5f06a164800ea90ba4db41a0486321ae"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/Digital-Process-Tools/claude-remember"
+    },
+    {
+      "name": "revenuecat",
+      "description": "Configure RevenueCat projects, apps, products, entitlements, and offerings directly from Claude Code. Manage your in-app purchase backend without leaving your development workflow.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/RevenueCat/rc-claude-code-plugin.git",
+        "sha": "af7cb77996aee4e7e3c109c5afec81f716139032"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://www.revenuecat.com"
+    },
+    {
+      "name": "sagemaker-ai",
+      "description": "Build, train, and deploy AI models with deep AWS AI/ML expertise brought directly into your coding assistants, covering the surface area of Amazon SageMaker AI.",
+      "category": "development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/awslabs/agent-plugins.git",
+        "path": "plugins/sagemaker-ai",
+        "ref": "main"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/awslabs/agent-plugins"
+    },
+    {
+      "name": "sanity",
+      "description": "Sanity content platform integration with MCP server, agent skills, and slash commands. Query and author content, build and optimize GROQ queries, design schemas, and set up Visual Editing.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/sanity-io/agent-toolkit.git",
+        "sha": "bc09fa9854507c538a856648aafbd4e1a775a95c"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Sanity"
+      },
+      "homepage": "https://www.sanity.io"
+    },
+    {
+      "name": "sap-mdk-server",
+      "description": "MCP server for SAP Mobile Development Kit (MDK). Build and modify MDK applications with AI assistance — schema lookups, action validation, rule editing, and project scaffolding.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SAP/mdk-mcp-server.git",
+        "sha": "af81fe6c2421c5748388c65241da6a1b319a2c8f"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "SAP"
+      },
+      "homepage": "https://help.sap.com/docs/MDK"
+    },
+    {
+      "name": "searchfit-seo",
+      "description": "Free AI-powered SEO toolkit — audit websites, plan content strategy, optimize pages, generate schema markup, cluster keywords, and track AI visibility. Works with any website or codebase.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/searchfit/searchfit-seo.git",
+        "sha": "ced1a99a9fadfc10aa573a05829fc1bd357d4e4c"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://searchfit.ai"
+    },
+    {
+      "name": "semgrep",
+      "description": "Semgrep catches security vulnerabilities in real-time and guides Claude to write secure code from the start.",
+      "category": "security",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/semgrep/mcp-marketplace.git",
+        "path": "plugin"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/semgrep/mcp-marketplace.git"
+    },
+    {
+      "name": "sentry",
+      "description": "Sentry error monitoring integration. Access error reports, analyze stack traces, search issues by fingerprint, and debug production errors directly from your development environment.",
+      "category": "monitoring",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/getsentry/sentry-for-claude.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/getsentry/sentry-for-claude/tree/main"
+    },
+    {
+      "name": "servicenow-sdk",
+      "description": "Create, edit, and deploy ServiceNow applications with the Fluent SDK effortlessly through Claude AI.",
+      "category": "development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ServiceNow/sdk.git",
+        "path": "providers/claude/plugin",
+        "ref": "main",
+        "sha": "06adf37ca78c270a57f93e7b9dfbb7bf16e24611"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "ServiceNow"
+      },
+      "homepage": "https://servicenow.github.io/sdk/"
+    },
+    {
+      "name": "shopify",
+      "description": "Shopify developer tools for Claude Code — search Shopify docs, generate and validate GraphQL, Liquid, and UI extension code",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Shopify/shopify-plugins.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Shopify"
+      },
+      "homepage": "https://shopify.dev/docs/apps/build/devmcp"
+    },
+    {
+      "name": "shopify-ai-toolkit",
+      "description": "Shopify's AI Toolkit provides 18 development skills for building on the Shopify platform, covering documentation search, API schema access, GraphQL and Liquid code validation, Hydrogen storefronts, Polaris UI extensions, store management via CLI, and onboarding guidance for both developers and merchants.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Shopify/Shopify-AI-Toolkit.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Shopify"
+      },
+      "homepage": "https://shopify.dev"
+    },
+    {
+      "name": "slack",
+      "description": "Slack workspace integration. Search messages, access channels, read threads, and stay connected with your team's communications while coding. Find relevant discussions and context quickly.",
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/slackapi/slack-mcp-plugin.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/slackapi/slack-mcp-plugin/tree/main"
+    },
+    {
+      "name": "snowflake-cortex-code",
+      "description": "Automatically route Snowflake prompts from Claude Code to Cortex Code for execution. Provides slash commands for code review and task delegation, plus skills for routing, run, and setup.",
+      "category": "development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Snowflake-Labs/snowflake-ai-kit.git",
+        "path": "plugins/cortex-code",
+        "ref": "main",
+        "sha": "28192345cae4a758a909f5e510e24fea10666400"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Snowflake"
+      },
+      "homepage": "https://docs.snowflake.com/en/user-guide/cortex-code"
+    },
+    {
+      "name": "sonarqube",
+      "description": "Automatically enforce SonarQube code quality and security in the agent coding loop — 7,000+ rules, secrets scanning, agentic analysis, and quality gates across 40+ languages. PostToolUse hooks run analysis after every file edit. Pre-tool secrets scanning prevents 450+ patterns from reaching the LLM. Slash commands give on-demand access to quality gate status, coverage, duplication, and dependency risks. Includes SonarQube CLI, MCP Server, skills, hooks, and slash commands.",
+      "category": "security",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SonarSource/sonarqube-agent-plugins.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "SonarSource"
+      },
+      "homepage": "https://www.sonarsource.com"
+    },
+    {
+      "name": "sonatype-guide",
+      "description": "Sonatype Guide MCP server for software supply chain intelligence and dependency security. Analyze dependencies for vulnerabilities, get secure version recommendations, and check component quality metrics.",
+      "category": "security",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/sonatype/sonatype-guide-claude-plugin.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/sonatype/sonatype-guide-claude-plugin.git"
+    },
+    {
+      "name": "sourcegraph",
+      "description": "Code search and understanding across codebases. Search, read, and trace references across repositories; analyze refactor impact; investigate incidents via commit and diff search; run targeted security sweeps.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/sourcegraph-community/sourcegraph-claudecode-plugin.git",
+        "sha": "332ee0ca9a409ccd791abee43c7abf2606469017"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://sourcegraph.com"
+    },
+    {
+      "name": "speakai",
+      "description": "Search transcripts, summarize meetings, extract quotes, create clips, and manage Speak AI media through MCP.",
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/speakai/speakai-mcp.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Speak AI"
+      },
+      "homepage": "https://mcp.speakai.co"
+    },
+    {
+      "name": "spotify-ads-api",
+      "description": "Manage Spotify ad campaigns with natural language. Create campaigns, ad sets, ads, pull reports, and handle OAuth — all through conversation.",
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/spotify/ads-claude-plugin.git",
+        "sha": "63585cc919da51dd24fab594d829869595301922"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/spotify/ads-claude-plugin"
+    },
+    {
+      "name": "stagehand",
+      "description": "Browser automation skill for Claude Code using Stagehand. Automate web interactions, extract data, and navigate websites using natural language.",
+      "category": "automation",
+      "source": {
+        "source": "github",
+        "repo": "browserbase/agent-browse"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Browserbase"
+      },
+      "keywords": [
+        "browser",
+        "automation",
+        "stagehand",
+        "web-scraping"
+      ],
+      "skills": [
+        "./.claude/skills/browser-automation"
+      ],
+      "homepage": "https://github.com/browserbase/agent-browse"
+    },
+    {
+      "name": "stripe",
+      "description": "Stripe development plugin for Claude",
+      "category": "development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/stripe/ai.git",
+        "path": "providers/claude/plugin",
+        "ref": "main"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/stripe/ai/tree/main/providers/claude/plugin"
+    },
+    {
+      "name": "sumup",
+      "description": "SumUp payment integrations across terminal and online checkout flows. Build Android and iOS POS apps with SumUp card readers, online checkout with server SDKs and the checkout widget, and control card readers remotely via Cloud API.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/sumup/sumup-skills.git",
+        "sha": "0fd0a911ecaffd7187fe35e914d8ead6de584ffd"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://www.sumup.com/"
+    },
+    {
+      "name": "supabase",
+      "description": "Supabase MCP integration for database operations, authentication, storage, and real-time subscriptions. Manage your Supabase projects, run SQL queries, and interact with your backend directly.",
+      "category": "database",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/supabase-community/supabase-plugin.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/supabase-community/supabase-plugin"
+    },
+    {
+      "name": "superpowers",
+      "description": "Superpowers teaches Claude brainstorming, subagent driven development with built in code review, systematic debugging, and red/green TDD. Additionally, it teaches Claude how to author and test new skills.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/obra/superpowers.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/obra/superpowers.git"
+    },
+    {
+      "name": "ui5",
+      "description": "SAPUI5 / OpenUI5 plugin for Claude. Create and validate UI5 projects, access API documentation, run UI5 linter, get development guidelines and best practices for UI5 development.",
+      "category": "development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/UI5/plugins-claude.git",
+        "path": "plugins/ui5",
+        "ref": "main",
+        "sha": "cec940abd4b7b6866de8e7e4522f3dba0449379d"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/UI5/plugins-claude"
+    },
+    {
+      "name": "ui5-typescript-conversion",
+      "description": "SAPUI5 / OpenUI5 plugin for Claude. Convert JavaScript based UI5 projects to TypeScript.",
+      "category": "development",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/UI5/plugins-claude.git",
+        "path": "plugins/ui5-typescript-conversion",
+        "ref": "main",
+        "sha": "cec940abd4b7b6866de8e7e4522f3dba0449379d"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/UI5/plugins-claude"
+    },
+    {
+      "name": "vanta-mcp-plugin",
+      "description": "The Vanta plugin connects Claude Code to Vanta's security and compliance platform through the Vanta MCP server. It combines Vanta's test-specific remediation intelligence with your local repository context to help you fix compliance failures faster.",
+      "category": "security",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/VantaInc/vanta-mcp-plugin.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Vanta"
+      },
+      "homepage": "https://help.vanta.com/en/articles/14094979-connecting-to-vanta-mcp#h_887ce3f337"
+    },
+    {
+      "name": "vercel",
+      "description": "Vercel deployment platform integration. Manage deployments, check build status, access logs, configure domains, and control your frontend infrastructure directly from Claude Code.",
+      "category": "deployment",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/vercel/vercel-plugin.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/vercel/vercel-plugin"
+    },
+    {
+      "name": "versori-skills",
+      "description": "Skills for building data integrations using the Versori platform and versori-run SDK. Claude can bootstrap projects, configure systems and connections, generate type-safe TypeScript workflows, run local validation via Deno, and deploy to production — with a research-first approach that grounds code generation in gathered API documentation.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/versori/cli.git",
+        "sha": "134cf334c3065509eee39a5361fd0bcf969dc867"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Versori"
+      },
+      "homepage": "https://docs.versori.com/latest/ai-tooling/overview"
+    },
+    {
+      "name": "voila-api",
+      "description": "Definitive guide for the Voila API. Covers shipment creation (Manual/Smart Shipping), real-time tracking, detailed history, manifesting, collections, webhooks, and third-party integrations (Sorted, Peoplevox, Mintsoft, Veeqo, JD).",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/TSedmanDC/Voila-API-Skill.git",
+        "sha": "422c7beb772a0de4592a204584e0e990fc5dc139"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/TSedmanDC/Voila-API-Skill"
+    },
+    {
+      "name": "windsor-ai",
+      "description": "Connect Claude Code to 325+ business data sources via Windsor.ai. Query marketing, sales, CRM, ecommerce, finance, and analytics data from Google Ads, Meta, HubSpot, Salesforce, Shopify, Stripe, and hundreds more — directly from your terminal.",
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/windsor-ai/claude-windsor-ai-plugin.git",
+        "sha": "248a6994b15b410cc025b105bb4ed5558e9b1af9"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Windsor.ai"
+      },
+      "homepage": "https://windsor.ai"
+    },
+    {
+      "name": "wix",
+      "description": "Build, manage, and deploy Wix sites and apps. CLI development skills for dashboard extensions, backend APIs, site widgets, and service plugins with the Wix Design System, plus MCP server for site management.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/wix/skills.git",
+        "sha": "bf25b5a45b2413b3581f3dcbcd63f3737791a051"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://dev.wix.com/docs/wix-cli/guides/development/about-wix-skills"
+    },
+    {
+      "name": "wordpress.com",
+      "description": "Uses Claude Code to create and edit WordPress sites with WordPress Studio before deploying changes to your WordPress.com site.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Automattic/claude-code-wordpress.com.git",
+        "sha": "052ca970df2c577d7c651e784935186ff93e6779"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://developer.wordpress.com/wordpress-com-claude-code-plugin/"
+    },
+    {
+      "name": "youdotcom-agent-skills",
+      "description": "You.com agent skills for web search, research with citations, and content extraction. Guided integrations for Vercel AI SDK, Claude Agent SDK, OpenAI Agents SDK, crewAI, LangChain, Microsoft Teams.ai, direct REST API, and bash CLI.",
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/youdotcom-oss/agent-skills.git",
+        "sha": "362d510732362bd679e1647f72f734ca2d2fa710"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "You.com"
+      },
+      "homepage": "https://you.com"
+    },
+    {
+      "name": "zapier",
+      "description": "Connect 8,000+ apps to your AI workflow. Discover, enable, and execute Zapier actions directly from your client.",
+      "category": "productivity",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/zapier/zapier-mcp.git",
+        "path": "plugins/zapier",
+        "ref": "main",
+        "sha": "76c4669321847c8f72a6e0462c17f29fd437519a"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://github.com/zapier/zapier-mcp/tree/main/plugins/zapier"
+    },
+    {
+      "name": "zoom-plugin",
+      "description": "Claude plugin for planning, building, and debugging Zoom integrations across REST APIs, SDKs, webhooks, bots, and MCP workflows.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/zoom/zoom-plugin.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "homepage": "https://developers.zoom.us/"
+    },
+    {
+      "name": "zscaler",
+      "description": "Manage Zscaler cloud security platform including ZPA (private access), ZIA (internet access), ZDX (digital experience), ZCC (client connector), EASM (attack surface), and Z-Insights (analytics). Create and manage policies, troubleshoot connectivity, audit security configurations, and investigate incidents across the full Zscaler ecosystem.",
+      "category": "security",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/zscaler/zscaler-mcp-server.git"
+      },
+      "strict": false,
+      "tags": [
+        "third-party",
+        "upstream-managed",
+        "indexed-from-public-plugin-directory"
+      ],
+      "author": {
+        "name": "Zscaler"
+      },
+      "homepage": "https://github.com/zscaler/zscaler-mcp-server"
     }
   ]
 }

@@ -1,0 +1,27 @@
+{
+  "name": "context7",
+  "version": "0.1.0",
+  "description": "Otto wrapper for the Context7 MCP server for version-aware documentation lookup.",
+  "author": {
+    "name": "OttoAI",
+    "url": "https://github.com/LEG3NDY/otto-plugins-official"
+  },
+  "homepage": "https://github.com/upstash/context7",
+  "repository": "https://github.com/LEG3NDY/otto-plugins-official",
+  "license": "Apache-2.0",
+  "keywords": [
+    "context7",
+    "docs",
+    "mcp",
+    "search"
+  ],
+  "mcpServers": {
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp"
+      ]
+    }
+  }
+}

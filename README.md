@@ -4,6 +4,11 @@ Official plugin marketplace for Otto.
 
 This repository contains curated plugins that extend Otto with reusable skills, automation workflows, and future MCP or agent integrations.
 
+The marketplace now has two catalog layers:
+
+- Otto-native official plugins stored under `./plugins/*`
+- curated third-party upstream plugins referenced remotely from `marketplace.json`
+
 ## What Lives Here
 
 Each plugin in this marketplace is a self-contained package that Otto can install and expose to the user.
@@ -36,6 +41,15 @@ Official plugins:
   Skill authoring workflows for creating, refining, and standardizing Otto skills.
 - LSP plugins
   Code intelligence adapters for TypeScript/JavaScript, HTML, CSS, JSON, Markdown, TOML, YAML, Python, Rust, Go, and C/C++.
+
+Curated third-party catalog:
+
+- indexed from public plugin directories only when the entry already points to an explicit upstream repository or package source
+- installed from their upstream repositories instead of being copied into this repo
+- tagged with `third-party`, `upstream-managed`, and `indexed-from-public-plugin-directory`
+- kept separate from Otto-authored plugins even though they are discoverable from the same marketplace
+- does not install from vendored `external_plugins/*` copies inside Anthropic's public marketplace repo
+- includes a small set of Otto-maintained compatibility wrappers for vendor/community MCP servers where the useful integration is the MCP config itself rather than third-party plugin code
 
 ## How Users Benefit
 
@@ -96,5 +110,7 @@ otto-plugins-official/
 This repository publishes the official Otto plugin marketplace.
 
 Most plugin content here is Otto-native or adapted from Apache-licensed public skill examples, with plugin-level `NOTICE` files and modified-file attribution notices where content was rewritten. Anthropic-restricted/source-available document skills and content without clear redistribution terms are intentionally excluded from this repository. See `THIRD_PARTY_NOTICES.md` for attribution and sourcing notes.
+
+Third-party mirrored entries are not redistributed here. The marketplace only points Otto to their upstream sources using supported remote plugin source types such as `url`, `github`, and `git-subdir`.
 
 For a source-by-source inclusion summary, see [docs/SKILL_PORTING_MATRIX.md](./docs/SKILL_PORTING_MATRIX.md).

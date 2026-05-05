@@ -1,0 +1,36 @@
+{
+  "name": "greptile",
+  "version": "0.1.0",
+  "description": "Otto wrapper for the Greptile MCP endpoint for code search and PR review workflows.",
+  "author": {
+    "name": "OttoAI",
+    "url": "https://github.com/LEG3NDY/otto-plugins-official"
+  },
+  "homepage": "https://greptile.com/docs",
+  "repository": "https://github.com/LEG3NDY/otto-plugins-official",
+  "license": "Apache-2.0",
+  "keywords": [
+    "greptile",
+    "mcp",
+    "code-search",
+    "review"
+  ],
+  "userConfig": {
+    "GREPTILE_API_KEY": {
+      "type": "string",
+      "title": "Greptile API Key",
+      "description": "API key used to authenticate against the Greptile MCP endpoint.",
+      "required": true,
+      "sensitive": true
+    }
+  },
+  "mcpServers": {
+    "greptile": {
+      "type": "http",
+      "url": "https://api.greptile.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${user_config.GREPTILE_API_KEY}"
+      }
+    }
+  }
+}
